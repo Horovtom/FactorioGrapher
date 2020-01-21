@@ -1,13 +1,9 @@
 # TODO: ADD FROM/TO Graph generation
-import json
 
 from gui.gui import GUI
 from logic.Graph import Graph
 
-with open("resources/recipes.json", 'r') as recipes_file:
-    recipes = json.load(recipes_file)
-
-g = Graph(recipes)
+g = Graph(recipes="resources/recipes.json", factories="resources/factories.json")
 
 a = GUI(g)
 a.run()

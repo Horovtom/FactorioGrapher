@@ -1,16 +1,46 @@
+import json
+
 from logic.Recipe import Recipe
 from logic.Resource import Resource
 from logic.dot_wrapper import DotWrapper
-from logic.helpers import warning, convert_name
+from logic.helpers import warning, convert_name, info
 
 
 class Graph:
-    def __init__(self, recipes: dict):
-        self.recipes_json: dict = recipes
+    def __init__(self, recipes: str, factories: str):
+        self.recipes_filename = recipes
+        self.factories_filename = factories
+        self.recipes_json: dict = {}
+        self.factories: dict = {}
         self.resources: dict = {}
         self.resources_name_map: dict = {}
         self.recipes: dict = {}
+        self.reload_factories()
+        self.reload_recipes()
         self.construct()
+
+    def reload_factories(self):
+        with open(self.factories_filename, 'r') as f:
+            s = json.load(f)
+
+        self.factories = s
+
+    def reload_recipes(self):
+        with open(self.recipes_filename, 'r') as f:
+            s = json.load(f)
+
+        self.recipes_json = s
+
+    def overwrite_factories(self):
+        with open(self.factories_filename, 'w') as f:
+            json.dump(self.factories, f)
+            info("Write into {} successful".format(self.factories_filename))
+
+    def overwrite_recipes(self):
+        # TODO: Make sure we have added the recipe to the JSON variable!
+        with open(self.recipes_filename, 'w') as f:
+            json.dump(self.recipes_json, f)
+            info("Write into {} succesful".format(self.recipes_filename))
 
     def check_integrity(self):
         # TODO: Check if there are no two recipes that have the same inputs/outputs/speed.
@@ -131,3 +161,12 @@ class Graph:
         if direction <= 0:
             draw_recursive_down(res, 1)
         return dot
+
+    def add_factory(self, name, speed):
+        if name in self.factories:
+            warning("Factory name: {} taken".format(name))
+
+        self.factories[name] = speed
+
+        # Save it...
+        self.overwrite_factories()

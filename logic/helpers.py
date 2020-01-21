@@ -9,6 +9,9 @@ def warning(message: str):
     print("WARNING: {}".format(message), file=sys.stderr)
 
 
+def info(message: str):
+    print(message)
+
 def convert_name(name: str) -> str:
     return name.replace(' ', '_').replace(':', '_').lower()
 
