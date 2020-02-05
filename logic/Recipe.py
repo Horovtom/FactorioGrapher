@@ -3,9 +3,9 @@ from logic.helpers import format_number
 
 
 class Recipe:
-    def __init__(self, human_name: str, converted_name: str, recipe_speed: float, recipe_building: str):
-        self.human_name = human_name
-        self.converted_name = converted_name
+    def __init__(self, name: str, recipe_speed: float, recipe_building: str):
+        self.human_name = name
+        self.converted_name = name
         self.input_resources: dict = {}
         self.output_resources: dict = {}
         self.time: float = recipe_speed

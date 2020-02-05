@@ -1,1 +1,6 @@
-{"Assembling Machine 1": 0.75}
+{
+  "Assembling Machine 1": {
+    "speed": 0.75,
+    "type": "crafting"
+  }
+}

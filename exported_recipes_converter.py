@@ -1,7 +1,7 @@
 import json
 
 recipes: dict
-with open("resources/recipes_exported.json", 'r') as recipes_file:
+with open("resources/recipes_export.json", 'r') as recipes_file:
     recipes = json.load(recipes_file)
 
 done = {}
@@ -47,5 +47,5 @@ for key in recipes.keys():
         ins.append(r)
     done[key]["inputs"] = ins
 
-with open("resources/recipes_exported_edited.json", "w") as file:
+with open("resources/recipes.json", "w") as file:
     json.dump(done, file)

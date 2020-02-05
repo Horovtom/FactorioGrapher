@@ -74,20 +74,13 @@ class Graph:
 
         for recipe_name in self.recipes_json.keys():
             recipe_dict = self.recipes_json[recipe_name]
-            converted_recipe_name = convert_name(recipe_name)
 
-            # Sanity check
-            if converted_recipe_name in self.recipes.keys():
-                warning("Recipe: {} is actually twice in the input file. "
-                        "The other has name: {}".format(recipe_name, self.recipes[converted_recipe_name].name))
-                continue
-
-            recipe_obj = Recipe(recipe_name, converted_recipe_name, recipe_dict["time"], recipe_dict["building"])
+            recipe_obj = Recipe("r_" + recipe_name, recipe_dict["time"], recipe_dict["category"])
 
             add_resources_to_recipe(recipe_dict, recipe_obj, do_input=True)
             add_resources_to_recipe(recipe_dict, recipe_obj, do_input=False)
 
-            self.recipes[converted_recipe_name] = recipe_obj
+            self.recipes[recipe_name] = recipe_obj
 
     def get_resources_list(self):
         res = list(self.resources_name_map.keys())
