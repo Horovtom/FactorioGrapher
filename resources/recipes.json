@@ -1,3744 +1,4526 @@
 {
-  "Water Purification": {
-    "inputs": [
-      {
-        "resource": "Water",
-        "amount": 150
-      }
-    ],
+  "accumulator": {
+    "category": "crafting",
+    "time": 10,
     "outputs": [
       {
-        "resource": "Saline Water",
+        "resource": "accumulator",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 2
+      },
+      {
+        "resource": "battery",
+        "amount": 5
+      }
+    ]
+  },
+  "advanced-circuit": {
+    "category": "crafting",
+    "time": 6,
+    "outputs": [
+      {
+        "resource": "advanced-circuit",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "plastic-bar",
+        "amount": 2
+      },
+      {
+        "resource": "copper-cable",
+        "amount": 4
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 2
+      }
+    ]
+  },
+  "arithmetic-combinator": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "arithmetic-combinator",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-cable",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 5
+      }
+    ]
+  },
+  "artillery-shell": {
+    "category": "crafting",
+    "time": 15,
+    "outputs": [
+      {
+        "resource": "artillery-shell",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "explosives",
+        "amount": 8
+      },
+      {
+        "resource": "explosive-cannon-shell",
+        "amount": 4
+      },
+      {
+        "resource": "radar",
+        "amount": 1
+      }
+    ]
+  },
+  "artillery-targeting-remote": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "artillery-targeting-remote",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "processing-unit",
+        "amount": 1
+      },
+      {
+        "resource": "radar",
+        "amount": 1
+      }
+    ]
+  },
+  "artillery-turret": {
+    "category": "crafting",
+    "time": 40,
+    "outputs": [
+      {
+        "resource": "artillery-turret",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 60
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 40
+      },
+      {
+        "resource": "advanced-circuit",
         "amount": 20
       },
       {
-        "resource": "Purified Water",
-        "amount": 100
-      }
-    ],
-    "time": 1,
-    "building": "Hydro Plant"
-  },
-  "24x Iron Ingot": {
-    "inputs": [
-      {
-        "resource": "Iron Ore",
-        "amount": 24
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Iron Ingot",
-        "amount": 24
-      }
-    ],
-    "time": 4,
-    "building": "Blast Furnace MK1"
-  },
-  "24x Copper Ingot": {
-    "inputs": [
-      {
-        "resource": "Copper Ore",
-        "amount": 24
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Copper Ingot",
-        "amount": 24
-      }
-    ],
-    "time": 4,
-    "building": "Blast Furnace MK1"
-  },
-  "120x Molten Iron": {
-    "inputs": [
-      {
-        "resource": "Iron Ingot",
-        "amount": 12
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Molten Iron",
-        "amount": 120
-      }
-    ],
-    "time": 4,
-    "building": "Induction Furnace MK1"
-  },
-  "120x Molten Copper": {
-    "inputs": [
-      {
-        "resource": "Copper Ingot",
-        "amount": 12
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Molten Copper",
-        "amount": 120
-      }
-    ],
-    "time": 4,
-    "building": "Induction Furnace MK1"
-  },
-  "4x Iron Plate": {
-    "inputs": [
-      {
-        "resource": "Molten Iron",
-        "amount": 40
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Iron plate",
-        "amount": 4
-      }
-    ],
-    "time": 4,
-    "building": "Casting Machine MK1"
-  },
-  "2x Crushed Stone": {
-    "inputs": [
-      {
-        "resource": "Slag",
-        "amount": 1
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Crushed Stone",
-        "amount": 2
-      }
-    ],
-    "time": 1.0,
-    "building": "Ore Crusher"
-  },
-  "Saphirite Ore Crushing": {
-    "inputs": [
-      {
-        "resource": "Saphirite Ore",
-        "amount": 2
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Crushed Saphirite",
-        "amount": 2
-      },
-      {
-        "resource": "Crushed Stone",
-        "amount": 1
-      }
-    ],
-    "time": 1.0,
-    "building": "Ore Crusher"
-  },
-  "Dirt Water Electrolysis: HOS": {
-    "inputs": [
-      {
-        "resource": "Water",
-        "amount": 100
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Slag",
-        "amount": 1
-      },
-      {
-        "resource": "Oxygen Gas",
-        "amount": 30
-      },
-      {
-        "resource": "Hydrogen Gas",
-        "amount": 40
-      }
-    ],
-    "time": 4.0,
-    "building": "Electrolyser"
-  },
-  "Purified Water Electrolysis: HO": {
-    "inputs": [
-      {
-        "resource": "Purified Water",
-        "amount": 100
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Oxygen Gas",
-        "amount": 40
-      },
-      {
-        "resource": "Hydrogen Gas",
+        "resource": "concrete",
         "amount": 60
       }
-    ],
-    "time": 4.0,
-    "building": "Electrolyser"
+    ]
   },
-  "100x Mineralized Water": {
-    "inputs": [
-      {
-        "resource": "Crushed Stone",
-        "amount": 10
-      },
-      {
-        "resource": "Water",
-        "amount": 100
-      }
-    ],
+  "artillery-wagon": {
+    "category": "crafting",
+    "time": 4,
     "outputs": [
       {
-        "resource": "Mineralized Water",
-        "amount": 100
-      }
-    ],
-    "time": 1.0,
-    "building": "Liquifier"
-  },
-  "Stone (recipe)": {
-    "inputs": [
-      {
-        "resource": "Crushed Stone",
-        "amount": 2
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Stone",
+        "resource": "artillery-wagon",
         "amount": 1
       }
     ],
-    "time": 0.5,
-    "building": "Assembling machine 1"
-  },
-  "20x Green Algae": {
     "inputs": [
       {
-        "resource": "Water",
-        "amount": 100
+        "resource": "steel-plate",
+        "amount": 40
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 20
+      },
+      {
+        "resource": "engine-unit",
+        "amount": 64
+      },
+      {
+        "resource": "pipe",
+        "amount": 16
       }
-    ],
+    ]
+  },
+  "assembling-machine-1": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Green Algae",
-        "amount": 20
+        "resource": "assembling-machine-1",
+        "amount": 1
       }
     ],
-    "time": 30.0,
-    "building": "Algae Farm MK1"
-  },
-  "40x Green Algae": {
     "inputs": [
       {
-        "resource": "Mineralized Water",
+        "resource": "iron-plate",
+        "amount": 9
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 3
+      }
+    ]
+  },
+  "assembling-machine-2": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "assembling-machine-2",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 2
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "resource": "assembling-machine-1",
+        "amount": 1
+      }
+    ]
+  },
+  "assembling-machine-3": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "assembling-machine-3",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "assembling-machine-2",
+        "amount": 2
+      },
+      {
+        "resource": "speed-module",
+        "amount": 4
+      }
+    ]
+  },
+  "atomic-bomb": {
+    "category": "crafting",
+    "time": 50,
+    "outputs": [
+      {
+        "resource": "atomic-bomb",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "explosives",
+        "amount": 10
+      },
+      {
+        "resource": "rocket-control-unit",
+        "amount": 10
+      },
+      {
+        "resource": "uranium-235",
+        "amount": 30
+      }
+    ]
+  },
+  "automation-science-pack": {
+    "category": "crafting",
+    "time": 5,
+    "outputs": [
+      {
+        "resource": "automation-science-pack",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 1
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 1
+      }
+    ]
+  },
+  "battery": {
+    "category": "chemistry",
+    "time": 4,
+    "outputs": [
+      {
+        "resource": "battery",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 1
+      },
+      {
+        "resource": "copper-plate",
+        "amount": 1
+      },
+      {
+        "resource": "sulfuric-acid",
+        "amount": 20
+      }
+    ]
+  },
+  "battery-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "battery-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 10
+      },
+      {
+        "resource": "battery",
+        "amount": 5
+      }
+    ]
+  },
+  "battery-mk2-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "battery-mk2-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "processing-unit",
+        "amount": 15
+      },
+      {
+        "resource": "low-density-structure",
+        "amount": 5
+      },
+      {
+        "resource": "battery-equipment",
+        "amount": 10
+      }
+    ]
+  },
+  "beacon": {
+    "category": "crafting",
+    "time": 15,
+    "outputs": [
+      {
+        "resource": "beacon",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 10
+      },
+      {
+        "resource": "copper-cable",
+        "amount": 10
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 20
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 20
+      }
+    ]
+  },
+  "belt-immunity-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "belt-immunity-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 10
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 5
+      }
+    ]
+  },
+  "big-electric-pole": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "big-electric-pole",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 5
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 5
+      },
+      {
+        "resource": "iron-stick",
+        "amount": 8
+      }
+    ]
+  },
+  "boiler": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "boiler",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "pipe",
+        "amount": 4
+      },
+      {
+        "resource": "stone-furnace",
+        "amount": 1
+      }
+    ]
+  },
+  "burner-inserter": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "burner-inserter",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 1
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 1
+      }
+    ]
+  },
+  "burner-mining-drill": {
+    "category": "crafting",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "burner-mining-drill",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 3
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 3
+      },
+      {
+        "resource": "stone-furnace",
+        "amount": 1
+      }
+    ]
+  },
+  "cannon-shell": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "cannon-shell",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 2
+      },
+      {
+        "resource": "plastic-bar",
+        "amount": 2
+      },
+      {
+        "resource": "explosives",
+        "amount": 1
+      }
+    ]
+  },
+  "car": {
+    "category": "crafting",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "car",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 20
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 5
+      },
+      {
+        "resource": "engine-unit",
+        "amount": 8
+      }
+    ]
+  },
+  "cargo-wagon": {
+    "category": "crafting",
+    "time": 1,
+    "outputs": [
+      {
+        "resource": "cargo-wagon",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 20
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 20
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      }
+    ]
+  },
+  "centrifuge": {
+    "category": "crafting",
+    "time": 4,
+    "outputs": [
+      {
+        "resource": "centrifuge",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 50
+      },
+      {
+        "resource": "iron-gear-wheel",
         "amount": 100
       },
       {
-        "resource": "Carbon Dioxide",
+        "resource": "advanced-circuit",
+        "amount": 100
+      },
+      {
+        "resource": "concrete",
         "amount": 100
       }
-    ],
+    ]
+  },
+  "chemical-plant": {
+    "category": "crafting",
+    "time": 5,
     "outputs": [
       {
-        "resource": "Green Algae",
-        "amount": 40
+        "resource": "chemical-plant",
+        "amount": 1
       }
     ],
-    "time": 20.0,
-    "building": "Algae Farm MK1"
-  },
-  "40x Brown Algae": {
     "inputs": [
       {
-        "resource": "Saline Water",
-        "amount": 100
-      }
-    ],
-    "outputs": [
+        "resource": "steel-plate",
+        "amount": 5
+      },
       {
-        "resource": "Brown Algae",
-        "amount": 40
-      }
-    ],
-    "time": 30.0,
-    "building": "Algae Farm MK1"
-  },
-  "5x Cellulose Fiber": {
-    "inputs": [
+        "resource": "iron-gear-wheel",
+        "amount": 5
+      },
       {
-        "resource": "Green Algae",
-        "amount": 10
-      }
-    ],
-    "outputs": [
+        "resource": "electronic-circuit",
+        "amount": 5
+      },
       {
-        "resource": "Cellulose Fiber",
+        "resource": "pipe",
         "amount": 5
       }
-    ],
-    "time": 2.0,
-    "building": "Assembling machine 1"
+    ]
   },
-  "2x Wood Pellets": {
-    "inputs": [
-      {
-        "resource": "Cellulose Fiber",
-        "amount": 12
-      }
-    ],
+  "chemical-science-pack": {
+    "category": "crafting",
+    "time": 24,
     "outputs": [
       {
-        "resource": "Wood Pellets",
+        "resource": "chemical-science-pack",
         "amount": 2
       }
     ],
-    "time": 3.0,
-    "building": "Assembling machine 1"
-  },
-  "4x Wood Bricks": {
     "inputs": [
       {
-        "resource": "Wood Pellets",
-        "amount": 8
+        "resource": "sulfur",
+        "amount": 1
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 3
+      },
+      {
+        "resource": "engine-unit",
+        "amount": 2
       }
-    ],
+    ]
+  },
+  "cliff-explosives": {
+    "category": "crafting",
+    "time": 8,
     "outputs": [
       {
-        "resource": "Wood Bricks",
+        "resource": "cliff-explosives",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "explosives",
+        "amount": 10
+      },
+      {
+        "resource": "empty-barrel",
+        "amount": 1
+      },
+      {
+        "resource": "grenade",
+        "amount": 1
+      }
+    ]
+  },
+  "cluster-grenade": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "cluster-grenade",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 5
+      },
+      {
+        "resource": "explosives",
+        "amount": 5
+      },
+      {
+        "resource": "grenade",
+        "amount": 7
+      }
+    ]
+  },
+  "combat-shotgun": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "combat-shotgun",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "wood",
+        "amount": 10
+      },
+      {
+        "resource": "copper-plate",
+        "amount": 10
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 15
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 5
+      }
+    ]
+  },
+  "concrete": {
+    "category": "crafting-with-fluid",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "concrete",
+        "amount": 10
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-ore",
+        "amount": 1
+      },
+      {
+        "resource": "stone-brick",
+        "amount": 5
+      },
+      {
+        "resource": "water",
+        "amount": 100
+      }
+    ]
+  },
+  "constant-combinator": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "constant-combinator",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-cable",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 2
+      }
+    ]
+  },
+  "construction-robot": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "construction-robot",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "resource": "flying-robot-frame",
+        "amount": 1
+      }
+    ]
+  },
+  "copper-cable": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "copper-cable",
+        "amount": 2
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 1
+      }
+    ]
+  },
+  "copper-plate": {
+    "category": "smelting",
+    "time": 3.2,
+    "outputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-ore",
+        "amount": 1
+      }
+    ]
+  },
+  "decider-combinator": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "decider-combinator",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-cable",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 5
+      }
+    ]
+  },
+  "defender-capsule": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "defender-capsule",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 3
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "resource": "piercing-rounds-magazine",
+        "amount": 3
+      }
+    ]
+  },
+  "destroyer-capsule": {
+    "category": "crafting",
+    "time": 15,
+    "outputs": [
+      {
+        "resource": "destroyer-capsule",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "speed-module",
+        "amount": 1
+      },
+      {
+        "resource": "distractor-capsule",
+        "amount": 4
+      }
+    ]
+  },
+  "discharge-defense-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "discharge-defense-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 20
+      },
+      {
+        "resource": "processing-unit",
+        "amount": 5
+      },
+      {
+        "resource": "laser-turret",
+        "amount": 10
+      }
+    ]
+  },
+  "discharge-defense-remote": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "discharge-defense-remote",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 1
+      }
+    ]
+  },
+  "distractor-capsule": {
+    "category": "crafting",
+    "time": 15,
+    "outputs": [
+      {
+        "resource": "distractor-capsule",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "advanced-circuit",
+        "amount": 3
+      },
+      {
+        "resource": "defender-capsule",
+        "amount": 4
+      }
+    ]
+  },
+  "effectivity-module": {
+    "category": "crafting",
+    "time": 15,
+    "outputs": [
+      {
+        "resource": "effectivity-module",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 5
+      }
+    ]
+  },
+  "effectivity-module-2": {
+    "category": "crafting",
+    "time": 30,
+    "outputs": [
+      {
+        "resource": "effectivity-module-2",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "resource": "processing-unit",
+        "amount": 5
+      },
+      {
+        "resource": "effectivity-module",
+        "amount": 4
+      }
+    ]
+  },
+  "effectivity-module-3": {
+    "category": "crafting",
+    "time": 60,
+    "outputs": [
+      {
+        "resource": "effectivity-module-3",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "resource": "processing-unit",
+        "amount": 5
+      },
+      {
+        "resource": "effectivity-module-2",
+        "amount": 5
+      }
+    ]
+  },
+  "electric-energy-interface": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "electric-energy-interface",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 2
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 5
+      }
+    ]
+  },
+  "electric-engine-unit": {
+    "category": "crafting-with-fluid",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "electric-engine-unit",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "resource": "engine-unit",
+        "amount": 1
+      },
+      {
+        "resource": "lubricant",
+        "amount": 15
+      }
+    ]
+  },
+  "electric-furnace": {
+    "category": "crafting",
+    "time": 5,
+    "outputs": [
+      {
+        "resource": "electric-furnace",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 10
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 5
+      },
+      {
+        "resource": "stone-brick",
+        "amount": 10
+      }
+    ]
+  },
+  "electric-mining-drill": {
+    "category": "crafting",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "electric-mining-drill",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 10
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 3
+      }
+    ]
+  },
+  "electronic-circuit": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 1
+      },
+      {
+        "resource": "copper-cable",
+        "amount": 3
+      }
+    ]
+  },
+  "energy-shield-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "energy-shield-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 10
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 5
+      }
+    ]
+  },
+  "energy-shield-mk2-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "energy-shield-mk2-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "processing-unit",
+        "amount": 5
+      },
+      {
+        "resource": "low-density-structure",
+        "amount": 5
+      },
+      {
+        "resource": "energy-shield-equipment",
+        "amount": 10
+      }
+    ]
+  },
+  "engine-unit": {
+    "category": "advanced-crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "engine-unit",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 1
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 1
+      },
+      {
+        "resource": "pipe",
+        "amount": 2
+      }
+    ]
+  },
+  "exoskeleton-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "exoskeleton-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 20
+      },
+      {
+        "resource": "processing-unit",
+        "amount": 10
+      },
+      {
+        "resource": "electric-engine-unit",
+        "amount": 30
+      }
+    ]
+  },
+  "explosive-cannon-shell": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "explosive-cannon-shell",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 2
+      },
+      {
+        "resource": "plastic-bar",
+        "amount": 2
+      },
+      {
+        "resource": "explosives",
+        "amount": 2
+      }
+    ]
+  },
+  "explosive-rocket": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "explosive-rocket",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "explosives",
+        "amount": 2
+      },
+      {
+        "resource": "rocket",
+        "amount": 1
+      }
+    ]
+  },
+  "explosive-uranium-cannon-shell": {
+    "category": "crafting",
+    "time": 12,
+    "outputs": [
+      {
+        "resource": "explosive-uranium-cannon-shell",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "uranium-238",
+        "amount": 1
+      },
+      {
+        "resource": "explosive-cannon-shell",
+        "amount": 1
+      }
+    ]
+  },
+  "explosives": {
+    "category": "chemistry",
+    "time": 4,
+    "outputs": [
+      {
+        "resource": "explosives",
+        "amount": 2
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "coal",
+        "amount": 1
+      },
+      {
+        "resource": "sulfur",
+        "amount": 1
+      },
+      {
+        "resource": "water",
+        "amount": 10
+      }
+    ]
+  },
+  "express-loader": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "express-loader",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "express-transport-belt",
+        "amount": 5
+      },
+      {
+        "resource": "fast-loader",
+        "amount": 1
+      }
+    ]
+  },
+  "express-splitter": {
+    "category": "crafting-with-fluid",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "express-splitter",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 10
+      },
+      {
+        "resource": "fast-splitter",
+        "amount": 1
+      },
+      {
+        "resource": "lubricant",
+        "amount": 80
+      }
+    ]
+  },
+  "express-transport-belt": {
+    "category": "crafting-with-fluid",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "express-transport-belt",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "resource": "fast-transport-belt",
+        "amount": 1
+      },
+      {
+        "resource": "lubricant",
+        "amount": 20
+      }
+    ]
+  },
+  "express-underground-belt": {
+    "category": "crafting-with-fluid",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "express-underground-belt",
+        "amount": 2
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 80
+      },
+      {
+        "resource": "fast-underground-belt",
+        "amount": 2
+      },
+      {
+        "resource": "lubricant",
+        "amount": 40
+      }
+    ]
+  },
+  "fast-inserter": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "fast-inserter",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 2
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "resource": "inserter",
+        "amount": 1
+      }
+    ]
+  },
+  "fast-loader": {
+    "category": "crafting",
+    "time": 3,
+    "outputs": [
+      {
+        "resource": "fast-loader",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "fast-transport-belt",
+        "amount": 5
+      },
+      {
+        "resource": "loader",
+        "amount": 1
+      }
+    ]
+  },
+  "fast-splitter": {
+    "category": "crafting",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "fast-splitter",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 10
+      },
+      {
+        "resource": "splitter",
+        "amount": 1
+      }
+    ]
+  },
+  "fast-transport-belt": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "fast-transport-belt",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "resource": "transport-belt",
+        "amount": 1
+      }
+    ]
+  },
+  "fast-underground-belt": {
+    "category": "crafting",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "fast-underground-belt",
+        "amount": 2
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 40
+      },
+      {
+        "resource": "underground-belt",
+        "amount": 2
+      }
+    ]
+  },
+  "filter-inserter": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "filter-inserter",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 4
+      },
+      {
+        "resource": "fast-inserter",
+        "amount": 1
+      }
+    ]
+  },
+  "firearm-magazine": {
+    "category": "crafting",
+    "time": 1,
+    "outputs": [
+      {
+        "resource": "firearm-magazine",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 4
+      }
+    ]
+  },
+  "flamethrower": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "flamethrower",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 5
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      }
+    ]
+  },
+  "flamethrower-ammo": {
+    "category": "chemistry",
+    "time": 6,
+    "outputs": [
+      {
+        "resource": "flamethrower-ammo",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 5
+      },
+      {
+        "resource": "crude-oil",
+        "amount": 100
+      }
+    ]
+  },
+  "flamethrower-turret": {
+    "category": "crafting",
+    "time": 20,
+    "outputs": [
+      {
+        "resource": "flamethrower-turret",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 30
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 15
+      },
+      {
+        "resource": "engine-unit",
+        "amount": 5
+      },
+      {
+        "resource": "pipe",
+        "amount": 10
+      }
+    ]
+  },
+  "fluid-wagon": {
+    "category": "crafting",
+    "time": 1.5,
+    "outputs": [
+      {
+        "resource": "fluid-wagon",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 16
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "resource": "storage-tank",
+        "amount": 1
+      },
+      {
+        "resource": "pipe",
+        "amount": 8
+      }
+    ]
+  },
+  "flying-robot-frame": {
+    "category": "crafting",
+    "time": 20,
+    "outputs": [
+      {
+        "resource": "flying-robot-frame",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 1
+      },
+      {
+        "resource": "battery",
+        "amount": 2
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 3
+      },
+      {
+        "resource": "electric-engine-unit",
+        "amount": 1
+      }
+    ]
+  },
+  "fusion-reactor-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "fusion-reactor-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "processing-unit",
+        "amount": 200
+      },
+      {
+        "resource": "low-density-structure",
+        "amount": 50
+      }
+    ]
+  },
+  "gate": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "gate",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 2
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "resource": "stone-wall",
+        "amount": 1
+      }
+    ]
+  },
+  "ghost-scanner": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "ghost-scanner",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-cable",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 5
+      }
+    ]
+  },
+  "green-wire": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "green-wire",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-cable",
+        "amount": 1
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 1
+      }
+    ]
+  },
+  "grenade": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "grenade",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "coal",
+        "amount": 10
+      },
+      {
+        "resource": "iron-plate",
+        "amount": 5
+      }
+    ]
+  },
+  "gun-turret": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "gun-turret",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 20
+      },
+      {
+        "resource": "copper-plate",
+        "amount": 10
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      }
+    ]
+  },
+  "hazard-concrete": {
+    "category": "crafting",
+    "time": 0.25,
+    "outputs": [
+      {
+        "resource": "hazard-concrete",
+        "amount": 10
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "concrete",
+        "amount": 10
+      }
+    ]
+  },
+  "heat-exchanger": {
+    "category": "crafting",
+    "time": 3,
+    "outputs": [
+      {
+        "resource": "heat-exchanger",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 100
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 10
+      },
+      {
+        "resource": "pipe",
+        "amount": 10
+      }
+    ]
+  },
+  "heat-pipe": {
+    "category": "crafting",
+    "time": 1,
+    "outputs": [
+      {
+        "resource": "heat-pipe",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 20
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 10
+      }
+    ]
+  },
+  "heavy-armor": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "heavy-armor",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 100
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 50
+      }
+    ]
+  },
+  "inserter": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "inserter",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 1
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 1
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 1
+      }
+    ]
+  },
+  "iron-chest": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "iron-chest",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 8
+      }
+    ]
+  },
+  "iron-gear-wheel": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 2
+      }
+    ]
+  },
+  "iron-plate": {
+    "category": "smelting",
+    "time": 3.2,
+    "outputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-ore",
+        "amount": 1
+      }
+    ]
+  },
+  "iron-stick": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "iron-stick",
+        "amount": 2
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 1
+      }
+    ]
+  },
+  "lab": {
+    "category": "crafting",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "lab",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 10
+      },
+      {
+        "resource": "transport-belt",
+        "amount": 4
+      }
+    ]
+  },
+  "land-mine": {
+    "category": "crafting",
+    "time": 5,
+    "outputs": [
+      {
+        "resource": "land-mine",
         "amount": 4
       }
     ],
-    "time": 2.0,
-    "building": "Assembling machine 1"
-  },
-  "5x Charcoal": {
     "inputs": [
       {
-        "resource": "Wood Bricks",
-        "amount": 1
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Charcoal",
-        "amount": 5
-      }
-    ],
-    "time": 3.5,
-    "building": "Stone furnace"
-  },
-  "50x Slag Slurry": {
-    "inputs": [
-      {
-        "resource": "Slag",
-        "amount": 5
-      },
-      {
-        "resource": "Sulfuric Acid",
-        "amount": 15
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Slag Slurry",
-        "amount": 50
-      }
-    ],
-    "time": 3.0,
-    "building": "Chemical Plant"
-  },
-  "Slurry Coal Filtering": {
-    "inputs": [
-      {
-        "resource": "Charcoal filter",
+        "resource": "steel-plate",
         "amount": 1
       },
       {
-        "resource": "Slag Slurry",
-        "amount": 50
-      },
-      {
-        "resource": "Purified Water",
-        "amount": 50
+        "resource": "explosives",
+        "amount": 2
       }
-    ],
+    ]
+  },
+  "landfill": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Filter Frame",
+        "resource": "landfill",
         "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "stone",
+        "amount": 20
+      }
+    ]
+  },
+  "laser-turret": {
+    "category": "crafting",
+    "time": 20,
+    "outputs": [
+      {
+        "resource": "laser-turret",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 20
       },
       {
-        "resource": "Mineral Sludge",
-        "amount": 50
+        "resource": "battery",
+        "amount": 12
       },
       {
-        "resource": "Sulfuric Waste Water",
+        "resource": "electronic-circuit",
+        "amount": 20
+      }
+    ]
+  },
+  "light-armor": {
+    "category": "crafting",
+    "time": 3,
+    "outputs": [
+      {
+        "resource": "light-armor",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
         "amount": 40
       }
-    ],
-    "time": 5.6,
-    "building": "Filtration Unit"
+    ]
   },
-  "Seafloor Pump (Recipe)": {
-    "inputs": [],
+  "loader": {
+    "category": "crafting",
+    "time": 1,
     "outputs": [
       {
-        "resource": "Viscous Mud Water",
-        "amount": 300
-      }
-    ],
-    "time": 1.0,
-    "building": "Seafloor Pump"
-  },
-  "Heavy Mud Water (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Viscous Mud Water",
-        "amount": 200.0
-      },
-      {
-        "resource": "Water",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Mud",
-        "amount": 0.75
-      },
-      {
-        "resource": "Heavy Mud Water",
-        "amount": 200.0
-      },
-      {
-        "resource": "Hydrogen Sulfide Gas",
-        "amount": 5.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Washing Plant"
-  },
-  "60x Sulfuric Acid": {
-    "inputs": [
-      {
-        "resource": "Sulfur Dioxide Gas",
-        "amount": 90.0
-      },
-      {
-        "resource": "Purified Water",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Sulfuric Acid",
-        "amount": 60.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Chemical Plant"
-  },
-  "60x Sulfur Dioxide Gas": {
-    "inputs": [
-      {
-        "resource": "Sulfur",
-        "amount": 1.0
-      },
-      {
-        "resource": "Oxygen Gas",
-        "amount": 60.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Sulfur Dioxide Gas",
-        "amount": 60.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Chemical Plant"
-  },
-  "3x Sulfur": {
-    "inputs": [
-      {
-        "resource": "Hydrogen Sulfide Gas",
-        "amount": 60.0
-      },
-      {
-        "resource": "Oxygen Gas",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Sulfur",
-        "amount": 3.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Chemical Plant"
-  },
-  "2x Alginic Acid": {
-    "inputs": [
-      {
-        "resource": "Brown Algae",
-        "amount": 10.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Alginic Acid",
-        "amount": 2.0
-      }
-    ],
-    "time": 10.0,
-    "building": "Assembling machine 1"
-  },
-  "20x Cellulose Pulp": {
-    "inputs": [
-      {
-        "resource": "Alginic Acid",
-        "amount": 5.0
-      },
-      {
-        "resource": "Cellulose Fiber",
-        "amount": 20.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Cellulose Pulp",
-        "amount": 20.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Assembling machine 1"
-  },
-  "4x Paper": {
-    "inputs": [
-      {
-        "resource": "Cellulose Pulp",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Paper",
-        "amount": 4.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Assembling machine 1"
-  },
-  "Wooden board (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Paper",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Wooden board",
-        "amount": 1.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Assembling machine 1"
-  },
-  "Basic circuit board (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Wooden board",
-        "amount": 1.0
-      },
-      {
-        "resource": "Copper cable",
-        "amount": 3.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Basic circuit board",
-        "amount": 1.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Assembling machine 1"
-  },
-  "2x Copper cable": {
-    "inputs": [
-      {
-        "resource": "Copper plate",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Copper cable",
-        "amount": 2.0
-      }
-    ],
-    "time": 0.5,
-    "building": "Assembling machine 1"
-  },
-  "Sulfuric Waste Water Purification": {
-    "inputs": [
-      {
-        "resource": "Sulfuric Waste Water",
-        "amount": 100.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Sulfur",
-        "amount": 1.0
-      },
-      {
-        "resource": "Mineralized Water",
-        "amount": 20.0
-      },
-      {
-        "resource": "Purified Water",
-        "amount": 70.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Hydro Plant"
-  },
-  "Nitric Waste Water Purification": {
-    "inputs": [
-      {
-        "resource": "Nitric Waste Water",
-        "amount": 100.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Mineralized Water",
-        "amount": 20.0
-      },
-      {
-        "resource": "Purified Water",
-        "amount": 70.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Hydro Plant"
-  },
-  "Chloric Waste Water Purification": {
-    "inputs": [
-      {
-        "resource": "Chloric Waste Water",
-        "amount": 100.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Saline Water",
-        "amount": 20.0
-      },
-      {
-        "resource": "Purified Water",
-        "amount": 70.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Hydro Plant"
-  },
-  "Concentrated Mud Water (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Heavy Mud Water",
-        "amount": 200.0
-      },
-      {
-        "resource": "Water",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Mud",
-        "amount": 0.75
-      },
-      {
-        "resource": "Concentrated Mud Water",
-        "amount": 200.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Washing Plant"
-  },
-  "Light Mud Water (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Concentrated Mud Water",
-        "amount": 200.0
-      },
-      {
-        "resource": "Water",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Mud",
-        "amount": 0.75
-      },
-      {
-        "resource": "Light Mud Water",
-        "amount": 200.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Washing Plant"
-  },
-  "Thin Mud Water (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Light Mud Water",
-        "amount": 200.0
-      },
-      {
-        "resource": "Water",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Mud",
-        "amount": 0.75
-      },
-      {
-        "resource": "Thin Mud Water",
-        "amount": 200.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Washing Plant"
-  },
-  "Saline Water (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Thin Mud Water",
-        "amount": 200.0
-      },
-      {
-        "resource": "Water",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Mud",
-        "amount": 0.75
-      },
-      {
-        "resource": "Saline Water",
-        "amount": 200.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Washing Plant"
-  },
-  "Clay (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Concentrated Mud Water",
-        "amount": 30.0
-      },
-      {
-        "resource": "Water",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Clay",
-        "amount": 3.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Washing Plant"
-  },
-  "Sand (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Thin Mud Water",
-        "amount": 10.0
-      },
-      {
-        "resource": "Water",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Sand",
-        "amount": 5.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Washing Plant"
-  },
-  "Stiratite Ore Crushing": {
-    "inputs": [
-      {
-        "resource": "Stiratite Ore",
-        "amount": 2
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Crushed Stiratite",
-        "amount": 2
-      },
-      {
-        "resource": "Crushed Stone",
+        "resource": "loader",
         "amount": 1
       }
     ],
-    "time": 1.0,
-    "building": "Ore Crusher"
-  },
-  "150x Viscous Mud Water": {
     "inputs": [
       {
-        "resource": "Mud",
+        "resource": "iron-plate",
+        "amount": 5
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "resource": "transport-belt",
+        "amount": 5
+      },
+      {
+        "resource": "inserter",
+        "amount": 5
+      }
+    ]
+  },
+  "locomotive": {
+    "category": "crafting",
+    "time": 4,
+    "outputs": [
+      {
+        "resource": "locomotive",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 30
+      },
+      {
+        "resource": "electronic-circuit",
         "amount": 10
       },
       {
-        "resource": "Water",
-        "amount": 150
+        "resource": "engine-unit",
+        "amount": 20
       }
-    ],
-    "outputs": [
-      {
-        "resource": "Viscous Mud Water",
-        "amount": 150
-      }
-    ],
-    "time": 5.0,
-    "building": "Liquifier"
+    ]
   },
-  "Rubyte Ore Crushing": {
-    "inputs": [
-      {
-        "resource": "Rubyte Ore",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Crushed Rubyte",
-        "amount": 2.0
-      },
-      {
-        "resource": "Crushed Stone",
-        "amount": 1.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Ore Crusher"
-  },
-  "Bobmonium Ore Crushing": {
-    "inputs": [
-      {
-        "resource": "Bobmonium Ore",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Crushed Bobmonium",
-        "amount": 2.0
-      },
-      {
-        "resource": "Crushed Stone",
-        "amount": 1.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Ore Crusher"
-  },
-  "Crystallizing to Bobmonium Ore": {
-    "inputs": [
-      {
-        "resource": "Mineral Sludge",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Bobmonium Ore",
-        "amount": 1.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Crystallizer"
-  },
-  "Crystallizing to Jivolite Ore": {
-    "inputs": [
-      {
-        "resource": "Mineral Sludge",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Jivolite Ore",
-        "amount": 1.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Crystallizer"
-  },
-  "Crystallizing to Crotinnium Ore": {
-    "inputs": [
-      {
-        "resource": "Mineral Sludge",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Crotinnium Ore",
-        "amount": 1.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Crystallizer"
-  },
-  "Crystallizing to Rubyte Ore": {
-    "inputs": [
-      {
-        "resource": "Mineral Sludge",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Rubyte Ore",
-        "amount": 1.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Crystallizer"
-  },
-  "Crystallizing to Stiratite Ore": {
-    "inputs": [
-      {
-        "resource": "Mineral Sludge",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Stiratite Ore",
-        "amount": 1.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Crystallizer"
-  },
-  "Crystallizing to Saphirite Ore": {
-    "inputs": [
-      {
-        "resource": "Mineral Sludge",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Saphirite Ore",
-        "amount": 1.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Crystallizer"
-  },
-  "Grass (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Mud",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Grass",
-        "amount": 1.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Assembling Machine 1"
-  },
-  "Landfill (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Crushed Stone",
-        "amount": 10.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Landfill",
-        "amount": 1.0
-      }
-    ],
+  "logistic-chest-active-provider": {
+    "category": "crafting",
     "time": 0.5,
-    "building": "Assembling Machine 1"
-  },
-  "Crushed Bobmonium Ore Sorting": {
-    "inputs": [
-      {
-        "resource": "Crushed Bobmonium",
-        "amount": 4.0
-      }
-    ],
     "outputs": [
       {
-        "resource": "Slag",
-        "amount": 1.0
+        "resource": "logistic-chest-active-provider",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 3
       },
       {
-        "resource": "Tin ore",
-        "amount": 2.0
+        "resource": "advanced-circuit",
+        "amount": 1
       },
       {
-        "resource": "Silicon Ore",
-        "amount": 1.0
+        "resource": "steel-chest",
+        "amount": 1
       }
-    ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility"
+    ]
   },
-  "Crushed Rubyte Ore Sorting": {
-    "inputs": [
-      {
-        "resource": "Crushed Rubyte",
-        "amount": 4.0
-      }
-    ],
+  "logistic-chest-buffer": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Slag",
-        "amount": 1.0
+        "resource": "logistic-chest-buffer",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 3
       },
       {
-        "resource": "Lead Ore",
-        "amount": 2.0
+        "resource": "advanced-circuit",
+        "amount": 1
       },
       {
-        "resource": "Nickel Ore",
-        "amount": 1.0
+        "resource": "steel-chest",
+        "amount": 1
       }
-    ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility"
+    ]
   },
-  "Crushed Stiratite Ore Sorting": {
-    "inputs": [
-      {
-        "resource": "Crushed Stiratite",
-        "amount": 4.0
-      }
-    ],
+  "logistic-chest-passive-provider": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Slag",
-        "amount": 1.0
+        "resource": "logistic-chest-passive-provider",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 3
       },
       {
-        "resource": "Copper ore",
-        "amount": 2.0
+        "resource": "advanced-circuit",
+        "amount": 1
       },
       {
-        "resource": "Iron ore",
-        "amount": 1.0
+        "resource": "steel-chest",
+        "amount": 1
       }
-    ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility"
+    ]
   },
-  "Crushed Saphirite Ore Sorting": {
-    "inputs": [
-      {
-        "resource": "Crushed Saphirite",
-        "amount": 4.0
-      }
-    ],
+  "logistic-chest-requester": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Slag",
-        "amount": 1.0
+        "resource": "logistic-chest-requester",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 3
       },
       {
-        "resource": "Iron ore",
-        "amount": 2.0
+        "resource": "advanced-circuit",
+        "amount": 1
       },
       {
-        "resource": "Copper ore",
-        "amount": 1.0
+        "resource": "steel-chest",
+        "amount": 1
       }
-    ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility"
+    ]
   },
-  "24x Tin Ingot": {
-    "inputs": [
-      {
-        "resource": "Tin ore",
-        "amount": 24.0
-      }
-    ],
+  "logistic-chest-storage": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Tin Ingot",
-        "amount": 24.0
+        "resource": "logistic-chest-storage",
+        "amount": 1
       }
     ],
-    "time": 4.0,
-    "building": "Blast Furnace MK1"
-  },
-  "4x Copper plate": {
     "inputs": [
       {
-        "resource": "Molten Copper",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Copper plate",
-        "amount": 4.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Casting Machine MK1"
-  },
-  "4x Lead plate": {
-    "inputs": [
-      {
-        "resource": "Molten Lead",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Lead plate",
-        "amount": 4.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Casting Machine MK1"
-  },
-  "4x Tin plate": {
-    "inputs": [
-      {
-        "resource": "Molten Tin",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Tin plate",
-        "amount": 4.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Casting Machine MK1"
-  },
-  "6x Solder": {
-    "inputs": [
-      {
-        "resource": "Molten Solder",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Solder",
-        "amount": 6.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Casting Machine MK1"
-  },
-  "4x Bronze plate": {
-    "inputs": [
-      {
-        "resource": "Molten Bronze",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Bronze plate",
-        "amount": 4.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Casting Machine MK1"
-  },
-  "120x Molten Lead": {
-    "inputs": [
-      {
-        "resource": "Lead Ingot",
-        "amount": 12.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Molten Lead",
-        "amount": 120.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Induction Furnace MK1"
-  },
-  "120x Molten Tin": {
-    "inputs": [
-      {
-        "resource": "Tin Ingot",
-        "amount": 12.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Molten Tin",
-        "amount": 120.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Induction Furnace MK1"
-  },
-  "240x Molten Solder": {
-    "inputs": [
-      {
-        "resource": "Lead Ingot",
-        "amount": 12.0
+        "resource": "electronic-circuit",
+        "amount": 3
       },
       {
-        "resource": "Tin Ingot",
-        "amount": 12.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Molten Solder",
-        "amount": 240.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Induction Furnace MK1"
-  },
-  "240x Molten Bronze": {
-    "inputs": [
-      {
-        "resource": "Copper Ingot",
-        "amount": 18.0
+        "resource": "advanced-circuit",
+        "amount": 1
       },
       {
-        "resource": "Tin Ingot",
-        "amount": 6.0
+        "resource": "steel-chest",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "logistic-robot": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Molten Bronze",
-        "amount": 240.0
+        "resource": "logistic-robot",
+        "amount": 1
       }
     ],
-    "time": 4.0,
-    "building": "Induction Furnace MK1"
-  },
-  "24x Lead Ingot": {
     "inputs": [
       {
-        "resource": "Lead Ore",
-        "amount": 24.0
-      },
-      {
-        "resource": "Oxygen Gas",
-        "amount": 60.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Lead Ingot",
-        "amount": 24.0
-      },
-      {
-        "resource": "Sulfur Dioxide Gas",
-        "amount": 60.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Blast Furnace MK1"
-  },
-  "4x Lime": {
-    "inputs": [
-      {
-        "resource": "Limestone",
-        "amount": 4.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Lime",
-        "amount": 4.0
-      },
-      {
-        "resource": "Carbon Dioxide",
-        "amount": 50.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Blast Furnace MK1"
-  },
-  "3x Carbon": {
-    "inputs": [
-      {
-        "resource": "Charcoal",
+        "resource": "advanced-circuit",
         "amount": 2
       },
       {
-        "resource": "Steam",
-        "amount": 30
+        "resource": "flying-robot-frame",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "logistic-science-pack": {
+    "category": "crafting",
+    "time": 6,
     "outputs": [
       {
-        "resource": "Carbon",
+        "resource": "logistic-science-pack",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "transport-belt",
+        "amount": 1
+      },
+      {
+        "resource": "inserter",
+        "amount": 1
+      }
+    ]
+  },
+  "logistic-train-stop": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "logistic-train-stop",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "train-stop",
+        "amount": 1
+      },
+      {
+        "resource": "small-lamp",
+        "amount": 1
+      },
+      {
+        "resource": "red-wire",
+        "amount": 2
+      },
+      {
+        "resource": "green-wire",
+        "amount": 2
+      },
+      {
+        "resource": "constant-combinator",
+        "amount": 1
+      }
+    ]
+  },
+  "long-handed-inserter": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "long-handed-inserter",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 1
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 1
+      },
+      {
+        "resource": "inserter",
+        "amount": 1
+      }
+    ]
+  },
+  "low-density-structure": {
+    "category": "crafting",
+    "time": 20,
+    "outputs": [
+      {
+        "resource": "low-density-structure",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 20
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 2
+      },
+      {
+        "resource": "plastic-bar",
+        "amount": 5
+      }
+    ]
+  },
+  "lubricant": {
+    "category": "chemistry",
+    "time": 1,
+    "outputs": [
+      {
+        "resource": "lubricant",
+        "amount": 10
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "heavy-oil",
+        "amount": 10
+      }
+    ]
+  },
+  "medium-electric-pole": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "medium-electric-pole",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 2
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 2
+      },
+      {
+        "resource": "iron-stick",
+        "amount": 4
+      }
+    ]
+  },
+  "military-science-pack": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "military-science-pack",
+        "amount": 2
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "piercing-rounds-magazine",
+        "amount": 1
+      },
+      {
+        "resource": "grenade",
+        "amount": 1
+      },
+      {
+        "resource": "stone-wall",
+        "amount": 2
+      }
+    ]
+  },
+  "modular-armor": {
+    "category": "crafting",
+    "time": 15,
+    "outputs": [
+      {
+        "resource": "modular-armor",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 50
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 30
+      }
+    ]
+  },
+  "night-vision-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "night-vision-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 10
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 5
+      }
+    ]
+  },
+  "nuclear-fuel": {
+    "category": "centrifuging",
+    "time": 90,
+    "outputs": [
+      {
+        "resource": "nuclear-fuel",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "rocket-fuel",
+        "amount": 1
+      },
+      {
+        "resource": "uranium-235",
+        "amount": 1
+      }
+    ]
+  },
+  "nuclear-reactor": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "nuclear-reactor",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 500
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 500
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 500
+      },
+      {
+        "resource": "concrete",
+        "amount": 500
+      }
+    ]
+  },
+  "offshore-pump": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "offshore-pump",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 1
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 2
+      },
+      {
+        "resource": "pipe",
+        "amount": 1
+      }
+    ]
+  },
+  "oil-refinery": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "oil-refinery",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 15
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 10
+      },
+      {
+        "resource": "pipe",
+        "amount": 10
+      },
+      {
+        "resource": "stone-brick",
+        "amount": 10
+      }
+    ]
+  },
+  "personal-laser-defense-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "personal-laser-defense-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "processing-unit",
+        "amount": 20
+      },
+      {
+        "resource": "low-density-structure",
+        "amount": 5
+      },
+      {
+        "resource": "laser-turret",
+        "amount": 5
+      }
+    ]
+  },
+  "personal-roboport-equipment": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "personal-roboport-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 20
+      },
+      {
+        "resource": "battery",
+        "amount": 45
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 40
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 10
+      }
+    ]
+  },
+  "personal-roboport-mk2-equipment": {
+    "category": "crafting",
+    "time": 20,
+    "outputs": [
+      {
+        "resource": "personal-roboport-mk2-equipment",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "processing-unit",
+        "amount": 100
+      },
+      {
+        "resource": "low-density-structure",
+        "amount": 20
+      },
+      {
+        "resource": "personal-roboport-equipment",
+        "amount": 5
+      }
+    ]
+  },
+  "piercing-rounds-magazine": {
+    "category": "crafting",
+    "time": 3,
+    "outputs": [
+      {
+        "resource": "piercing-rounds-magazine",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 5
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 1
+      },
+      {
+        "resource": "firearm-magazine",
+        "amount": 1
+      }
+    ]
+  },
+  "piercing-shotgun-shell": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "piercing-shotgun-shell",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 5
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 2
+      },
+      {
+        "resource": "shotgun-shell",
+        "amount": 2
+      }
+    ]
+  },
+  "pipe": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "pipe",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 1
+      }
+    ]
+  },
+  "pipe-to-ground": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "pipe-to-ground",
+        "amount": 2
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 5
+      },
+      {
+        "resource": "pipe",
+        "amount": 10
+      }
+    ]
+  },
+  "pistol": {
+    "category": "crafting",
+    "time": 5,
+    "outputs": [
+      {
+        "resource": "pistol",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 5
+      },
+      {
+        "resource": "copper-plate",
+        "amount": 5
+      }
+    ]
+  },
+  "plastic-bar": {
+    "category": "chemistry",
+    "time": 1,
+    "outputs": [
+      {
+        "resource": "plastic-bar",
+        "amount": 2
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "coal",
+        "amount": 1
+      },
+      {
+        "resource": "petroleum-gas",
+        "amount": 20
+      }
+    ]
+  },
+  "player-port": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "player-port",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 1
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 10
+      }
+    ]
+  },
+  "poison-capsule": {
+    "category": "crafting",
+    "time": 8,
+    "outputs": [
+      {
+        "resource": "poison-capsule",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "coal",
+        "amount": 10
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 3
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 3
+      }
+    ]
+  },
+  "power-armor": {
+    "category": "crafting",
+    "time": 20,
+    "outputs": [
+      {
+        "resource": "power-armor",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 40
+      },
+      {
+        "resource": "processing-unit",
+        "amount": 40
+      },
+      {
+        "resource": "electric-engine-unit",
+        "amount": 20
+      }
+    ]
+  },
+  "power-armor-mk2": {
+    "category": "crafting",
+    "time": 25,
+    "outputs": [
+      {
+        "resource": "power-armor-mk2",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "processing-unit",
+        "amount": 60
+      },
+      {
+        "resource": "electric-engine-unit",
+        "amount": 40
+      },
+      {
+        "resource": "low-density-structure",
+        "amount": 30
+      },
+      {
+        "resource": "speed-module-2",
+        "amount": 25
+      },
+      {
+        "resource": "effectivity-module-2",
+        "amount": 25
+      }
+    ]
+  },
+  "power-switch": {
+    "category": "crafting",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "power-switch",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 5
+      },
+      {
+        "resource": "copper-cable",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 2
+      }
+    ]
+  },
+  "processing-unit": {
+    "category": "crafting-with-fluid",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "processing-unit",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "electronic-circuit",
+        "amount": 20
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 2
+      },
+      {
+        "resource": "sulfuric-acid",
+        "amount": 5
+      }
+    ]
+  },
+  "production-science-pack": {
+    "category": "crafting",
+    "time": 21,
+    "outputs": [
+      {
+        "resource": "production-science-pack",
         "amount": 3
       }
     ],
-    "time": 2.0,
-    "building": "Liquifier\\nChemical plant"
-  },
-  "5x Charcoal filter": {
     "inputs": [
       {
-        "resource": "Filter Frame",
-        "amount": 5.0
+        "resource": "rail",
+        "amount": 30
       },
       {
-        "resource": "Charcoal",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
+        "resource": "electric-furnace",
+        "amount": 1
+      },
       {
-        "resource": "Charcoal filter",
-        "amount": 5.0
+        "resource": "productivity-module",
+        "amount": 1
       }
-    ],
-    "time": 1.0,
-    "building": "Assembling machine"
+    ]
   },
-  "10x Basic electronic components": {
-    "inputs": [
-      {
-        "resource": "Tinned copper wire",
-        "amount": 2.0
-      },
-      {
-        "resource": "Carbon",
-        "amount": 1.0
-      }
-    ],
+  "productivity-module": {
+    "category": "crafting",
+    "time": 15,
     "outputs": [
       {
-        "resource": "Basic electronic components",
-        "amount": 10.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Electronics assembling machine"
-  },
-  "2x Steel plate": {
-    "inputs": [
-      {
-        "resource": "Iron plate",
-        "amount": 8.0
-      },
-      {
-        "resource": "Oxygen gas",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Steel plate",
-        "amount": 2.0
-      }
-    ],
-    "time": 16.0,
-    "building": "Chemical furnace"
-  },
-  "11x Solder plate": {
-    "inputs": [
-      {
-        "resource": "Lead plate",
-        "amount": 7.0
-      },
-      {
-        "resource": "Tin plate",
-        "amount": 4.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Solder plate",
-        "amount": 11.0
-      }
-    ],
-    "time": 7.0,
-    "building": "Metal mixing furnace"
-  },
-  "Lithium chloride (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Brown Algae",
-        "amount": 20.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Lithium chloride",
-        "amount": 1.0
-      }
-    ],
-    "time": 7.5,
-    "building": "Furnace"
-  },
-  "4x Clay Brick": {
-    "inputs": [
-      {
-        "resource": "Unburnt Clay Brick",
-        "amount": 4.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Clay Brick",
-        "amount": 4.0
-      }
-    ],
-    "time": 8.0,
-    "building": "Furnace"
-  },
-  "32x Exploration-Token Bio-Tech": {
-    "inputs": [
-      {
-        "resource": "Desert Garden",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Exploration-Token Bio-Tech",
-        "amount": 32.0
-      }
-    ],
-    "time": 300.0,
-    "building": "Seed Extractor"
-  },
-  "Desert Seed Extraction": {
-    "inputs": [
-      {
-        "resource": "Desert Garden",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Exploration-Token Bio-Tech",
-        "amount": 16.0
-      },
-      {
-        "resource": "Binafran Seed",
-        "amount": 2.0
-      },
-      {
-        "resource": "Primedeadelion Seed",
-        "amount": 1.5
-      },
-      {
-        "resource": "Nilaubergine Seed",
-        "amount": 1.0
-      },
-      {
-        "resource": "Zelosquash Seed",
-        "amount": 0.5
-      },
-      {
-        "resource": "Arumbiphilia Seed",
-        "amount": 0.25
-      }
-    ],
-    "time": 300.0,
-    "building": "Seed Extractor"
-  },
-  "4x Tree": {
-    "inputs": [
-      {
-        "resource": "Tree Seed",
-        "amount": 2.0
-      },
-      {
-        "resource": "Soil",
-        "amount": 5.0
-      },
-      {
-        "resource": "Water",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Tree",
-        "amount": 4.0
-      }
-    ],
-    "time": 30.0,
-    "building": "Arboretum"
-  },
-  "4x Tree Seed": {
-    "inputs": [
-      {
-        "resource": "Soil",
-        "amount": 5.0
-      },
-      {
-        "resource": "Water",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Tree Seed",
-        "amount": 4.0
-      }
-    ],
-    "time": 15.0,
-    "building": "Desert Tree Seed Generator"
-  },
-  "Transport Science Pack (Recipe)": {
-    "inputs": [
-      {
-        "resource": "ATMOS Instrumentation",
-        "amount": 1.0
-      },
-      {
-        "resource": "ATMOS Reaction Nodes",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Transport science pack",
-        "amount": 1.0
-      }
-    ],
-    "time": 6.0,
-    "building": "Assembling machine"
-  },
-  "ATMOS Instrumentation (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Basic circuit board",
-        "amount": 1.0
-      },
-      {
-        "resource": "Microcircuits",
-        "amount": 10.0
-      },
-      {
-        "resource": "Tin plate",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "ATMOS Instrumentation",
-        "amount": 1.0
-      }
-    ],
-    "time": 1.5,
-    "building": "Assembling machine"
-  },
-  "10x Microcircuits": {
-    "inputs": [
-      {
-        "resource": "Micro-Wafer",
-        "amount": 1.0
-      },
-      {
-        "resource": "Copper plate",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Microcircuits",
-        "amount": 10.0
-      }
-    ],
-    "time": 1.5,
-    "building": "Assembling machine"
-  },
-  "2x Micro-Wafer": {
-    "inputs": [
-      {
-        "resource": "Wafer-Stamp",
-        "amount": 4.0
-      },
-      {
-        "resource": "Lead plate",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Micro-Wafer",
-        "amount": 2.0
-      }
-    ],
-    "time": 3.0,
-    "building": "Assembling machine"
-  },
-  "4x Wafer-Stamp": {
-    "inputs": [
-      {
-        "resource": "Iron plate",
-        "amount": 4.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Wafer-Stamp",
-        "amount": 4.0
-      }
-    ],
-    "time": 3.0,
-    "building": "Assembling machine"
-  },
-  "ATMOS Reaction Nodes (Reaction)": {
-    "inputs": [
-      {
-        "resource": "Tinned copper wire",
-        "amount": 2.0
-      },
-      {
-        "resource": "Iron plate",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "ATMOS Reaction Nodes",
-        "amount": 1.0
-      }
-    ],
-    "time": 1.5,
-    "building": "Assembling machine"
-  },
-  "8x Electromagnet Coils": {
-    "inputs": [
-      {
-        "resource": "Copper plate",
-        "amount": 4.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Electromagnet Coils",
-        "amount": 8.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Assembling machine"
-  },
-  "Electromagnet Core (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Iron plate",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Electromagnet Core",
-        "amount": 1.0
-      }
-    ],
-    "time": 1.25,
-    "building": "Assembling machine"
-  },
-  "Sacrificial electromagnet (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Electromagnet Core",
-        "amount": 1.0
-      },
-      {
-        "resource": "Electromagnet Coils",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Sacrificial electromagnet",
-        "amount": 1.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Assembling machine"
-  },
-  "50x Carbon Dioxide": {
-    "inputs": [
-      {
-        "resource": "Charcoal",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Carbon Dioxide",
-        "amount": 50.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Liquifier"
-  },
-  "70x Carbon Dioxide": {
-    "inputs": [
-      {
-        "resource": "Wood Pellets",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Carbon Dioxide",
-        "amount": 70.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Liquifier"
-  },
-  "Water Gas Shift": {
-    "inputs": [
-      {
-        "resource": "Carbon Monoxide",
-        "amount": 50.0
-      },
-      {
-        "resource": "Steam",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Carbon Dioxide",
-        "amount": 50.0
-      },
-      {
-        "resource": "Hydrogen Gas",
-        "amount": 50.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Liquifier"
-  },
-  "3x Limestone": {
-    "inputs": [
-      {
-        "resource": "Light Mud Water",
-        "amount": 20.0
-      },
-      {
-        "resource": "Water",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Limestone",
-        "amount": 3.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Washing Plant"
-  },
-  "Washing for Geodes (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Water",
-        "amount": 25.0
-      },
-      {
-        "resource": "Heavy Mud Water",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Blue Geode",
-        "amount": 1.5
-      },
-      {
-        "resource": "Cyan Geode",
-        "amount": 0.6
-      },
-      {
-        "resource": "Lightgreen Geode",
-        "amount": 0.6
-      },
-      {
-        "resource": "Purple Geode",
-        "amount": 0.75
-      },
-      {
-        "resource": "Red Geode",
-        "amount": 1.5
-      },
-      {
-        "resource": "Yellow Geode",
-        "amount": 1.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Washing Plant"
-  },
-  "Jivolite Ore Crushing": {
-    "inputs": [
-      {
-        "resource": "Jivolite Ore",
-        "amount": 2
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Crushed Jivolite",
-        "amount": 2
-      },
-      {
-        "resource": "Crushed Stone",
+        "resource": "productivity-module",
         "amount": 1
       }
     ],
-    "time": 1.0,
-    "building": "Ore Crusher"
-  },
-  "Crotinnium Ore Crushing": {
     "inputs": [
       {
-        "resource": "Crotinnium Ore",
-        "amount": 2
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Crushed Crotinnium",
-        "amount": 2
+        "resource": "electronic-circuit",
+        "amount": 5
       },
       {
-        "resource": "Crushed Stone",
+        "resource": "advanced-circuit",
+        "amount": 5
+      }
+    ]
+  },
+  "productivity-module-2": {
+    "category": "crafting",
+    "time": 30,
+    "outputs": [
+      {
+        "resource": "productivity-module-2",
         "amount": 1
       }
     ],
-    "time": 1.0,
-    "building": "Ore Crusher"
-  },
-  "Fluoric Waste Water Purification": {
     "inputs": [
       {
-        "resource": "Fluoric Waste Water",
-        "amount": 100.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Fluorite Ore",
-        "amount": 1.0
+        "resource": "advanced-circuit",
+        "amount": 5
       },
       {
-        "resource": "Mineralized Water",
-        "amount": 20.0
+        "resource": "processing-unit",
+        "amount": 5
       },
       {
-        "resource": "Purified Water",
-        "amount": 70.0
+        "resource": "productivity-module",
+        "amount": 4
       }
-    ],
-    "time": 1.0,
-    "building": "Hydro Plant"
+    ]
   },
-  "200x Compressed Air": {
-    "inputs": [],
+  "productivity-module-3": {
+    "category": "crafting",
+    "time": 60,
     "outputs": [
       {
-        "resource": "Compressed Air",
-        "amount": 200.0
+        "resource": "productivity-module-3",
+        "amount": 1
       }
     ],
-    "time": 6.0,
-    "building": "Air Filter"
-  },
-  "Rubber (Recipe)": {
     "inputs": [
       {
-        "resource": "Resin",
-        "amount": 4.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Rubber",
-        "amount": 1.0
-      }
-    ],
-    "time": 3.5,
-    "building": "Furnace"
-  },
-  "Blue Geode Processing": {
-    "inputs": [
-      {
-        "resource": "Blue Geode",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Crystal Dust",
-        "amount": 1.0
+        "resource": "advanced-circuit",
+        "amount": 5
       },
       {
-        "resource": "Crushed Stone",
-        "amount": 2.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Ore Crusher"
-  },
-  "Soil (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Mud",
-        "amount": 1.0
+        "resource": "processing-unit",
+        "amount": 5
       },
       {
-        "resource": "Compost",
-        "amount": 1.0
+        "resource": "productivity-module-2",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "programmable-speaker": {
+    "category": "crafting",
+    "time": 2,
     "outputs": [
       {
-        "resource": "Soil",
-        "amount": 1.0
+        "resource": "programmable-speaker",
+        "amount": 1
       }
     ],
-    "time": 4.0,
-    "building": "Assembling machine"
-  },
-  "Compost (Recipe)": {
     "inputs": [
       {
-        "resource": "Brown Algae",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Compost",
-        "amount": 1.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Composter"
-  },
-  "Wood (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Saw Blade",
-        "amount": 1.0
+        "resource": "iron-plate",
+        "amount": 3
       },
       {
-        "resource": "Tree",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Wood",
-        "amount": 7.0
+        "resource": "copper-cable",
+        "amount": 5
       },
       {
-        "resource": "Saw Blade",
-        "amount": 0.9
-      }
-    ],
-    "time": 2.0,
-    "building": "Assembling machine"
-  },
-  "4x Cellulose Fiber": {
-    "inputs": [
+        "resource": "iron-stick",
+        "amount": 4
+      },
       {
-        "resource": "Wood",
-        "amount": 2.0
+        "resource": "electronic-circuit",
+        "amount": 4
       }
-    ],
+    ]
+  },
+  "pump": {
+    "category": "crafting",
+    "time": 2,
     "outputs": [
       {
-        "resource": "Cellulose Fiber",
-        "amount": 4.0
+        "resource": "pump",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Assembling machine"
-  },
-  "Saw Blade (Recipe)": {
     "inputs": [
       {
-        "resource": "Iron plate",
-        "amount": 1.0
+        "resource": "steel-plate",
+        "amount": 1
+      },
+      {
+        "resource": "engine-unit",
+        "amount": 1
+      },
+      {
+        "resource": "pipe",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "pumpjack": {
+    "category": "crafting",
+    "time": 5,
     "outputs": [
       {
-        "resource": "Saw Blade",
-        "amount": 1.0
+        "resource": "pumpjack",
+        "amount": 1
       }
     ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 5
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "resource": "pipe",
+        "amount": 10
+      }
+    ]
+  },
+  "radar": {
+    "category": "crafting",
     "time": 0.5,
-    "building": "Assembling machine"
-  },
-  "400x Saline Water": {
-    "inputs": [
-      {
-        "resource": "Water",
-        "amount": 1000.0
-      }
-    ],
     "outputs": [
       {
-        "resource": "Saline Water",
-        "amount": 400.0
+        "resource": "radar",
+        "amount": 1
       }
     ],
-    "time": 5.0,
-    "building": "Salination Plant"
-  },
-  "Synthesis Sulfur DIoxide from Calcium Sulfate": {
     "inputs": [
       {
-        "resource": "Purified Water",
-        "amount": 50.0
+        "resource": "iron-plate",
+        "amount": 10
       },
       {
-        "resource": "Calcium Sulfate",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Lime",
-        "amount": 1.0
+        "resource": "iron-gear-wheel",
+        "amount": 5
       },
       {
-        "resource": "Sulfur Dioxide Gas",
-        "amount": 50.0
+        "resource": "electronic-circuit",
+        "amount": 5
       }
-    ],
-    "time": 2.0,
-    "building": "Liquifier"
+    ]
   },
-  "Catalytic Cracking Acid Gas": {
-    "inputs": [
-      {
-        "resource": "Green Metal Catalyst",
-        "amount": 1.0
-      },
-      {
-        "resource": "Acid Gas",
-        "amount": 100.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Metal Catalyst Carrier",
-        "amount": 1.0
-      },
-      {
-        "resource": "Hydrogen Sulfide Gas",
-        "amount": 60.0
-      },
-      {
-        "resource": "Carbon Dioxide",
-        "amount": 20.0
-      },
-      {
-        "resource": "Hydrofluoric Acid",
-        "amount": 20.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Advanced Chemical Plant"
-  },
-  "Synthesis Hydrofluoric Acid": {
-    "inputs": [
-      {
-        "resource": "Fluorite Ore",
-        "amount": 5.0
-      },
-      {
-        "resource": "Sulfuric Acid",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Calcium Sulfate",
-        "amount": 1.0
-      },
-      {
-        "resource": "Hydrofluoric Acid",
-        "amount": 50.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Chemical Plant"
-  },
-  "4x Iron ore": {
-    "inputs": [
-      {
-        "resource": "Mineral Catalyst",
-        "amount": 1.0
-      },
-      {
-        "resource": "Crushed Saphirite",
-        "amount": 2.0
-      },
-      {
-        "resource": "Crushed Jivolite",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Iron ore",
-        "amount": 4.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "4x Copper ore": {
-    "inputs": [
-      {
-        "resource": "Mineral Catalyst",
-        "amount": 1.0
-      },
-      {
-        "resource": "Crushed Stiratite",
-        "amount": 2.0
-      },
-      {
-        "resource": "Crushed Crotinnium",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Copper ore",
-        "amount": 4.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "4x Lead Ore": {
-    "inputs": [
-      {
-        "resource": "Mineral Catalyst",
-        "amount": 1.0
-      },
-      {
-        "resource": "Crushed Crotinnium",
-        "amount": 2.0
-      },
-      {
-        "resource": "Crushed Rubyte",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Lead Ore",
-        "amount": 4.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "4x Tin ore": {
-    "inputs": [
-      {
-        "resource": "Mineral Catalyst",
-        "amount": 1.0
-      },
-      {
-        "resource": "Crushed Stiratite",
-        "amount": 2.0
-      },
-      {
-        "resource": "Crushed Bobmonium",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Tin ore",
-        "amount": 4.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "Mineral Catalyst (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Mineral Sludge",
-        "amount": 25.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Mineral Catalyst",
-        "amount": 2.0
-      }
-    ],
+  "rail": {
+    "category": "crafting",
     "time": 0.5,
-    "building": "Crystallizer"
-  },
-  "Green Metal Catalyst (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Metal Catalyst Carrier",
-        "amount": 10.0
-      },
-      {
-        "resource": "Aluminium Ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Silver Ore",
-        "amount": 1.0
-      }
-    ],
     "outputs": [
       {
-        "resource": "Green Metal Catalyst",
-        "amount": 10.0
+        "resource": "rail",
+        "amount": 2
       }
     ],
-    "time": 2.0,
-    "building": "Assembling machine 1"
-  },
-  "10x Red Metal Catalyst": {
     "inputs": [
       {
-        "resource": "Metal Catalyst Carrier",
-        "amount": 10.0
+        "resource": "stone",
+        "amount": 1
       },
       {
-        "resource": "Copper ore",
-        "amount": 1.0
+        "resource": "steel-plate",
+        "amount": 1
       },
       {
-        "resource": "Iron ore",
-        "amount": 1.0
+        "resource": "iron-stick",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "rail-chain-signal": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Red Metal Catalyst",
-        "amount": 10.0
+        "resource": "rail-chain-signal",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Assembling machine"
-  },
-  "6x Tree": {
     "inputs": [
       {
-        "resource": "Tree Seed",
-        "amount": 2.0
+        "resource": "iron-plate",
+        "amount": 5
       },
       {
-        "resource": "Soil",
-        "amount": 5.0
-      },
-      {
-        "resource": "Fertilizer",
-        "amount": 1.0
-      },
-      {
-        "resource": "Water",
-        "amount": 50.0
+        "resource": "electronic-circuit",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "rail-signal": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Tree",
-        "amount": 6.0
+        "resource": "rail-signal",
+        "amount": 1
       }
     ],
-    "time": 30.0,
-    "building": "Arboretum"
-  },
-  "2x Fertilizer": {
     "inputs": [
       {
-        "resource": "Compost",
-        "amount": 2.0
+        "resource": "iron-plate",
+        "amount": 5
       },
       {
-        "resource": "Urea Gas",
-        "amount": 40.0
+        "resource": "electronic-circuit",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "railgun": {
+    "category": "crafting",
+    "time": 8,
     "outputs": [
       {
-        "resource": "Fertilizer",
-        "amount": 2.0
+        "resource": "railgun",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Assembling machine 2"
-  },
-  "Urea Synthesis": {
     "inputs": [
       {
-        "resource": "Ammonia Gas",
-        "amount": 60.0
+        "resource": "copper-plate",
+        "amount": 15
       },
       {
-        "resource": "Carbon Dioxide",
-        "amount": 40.0
+        "resource": "steel-plate",
+        "amount": 15
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 10
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "railgun-dart": {
+    "category": "crafting",
+    "time": 8,
     "outputs": [
       {
-        "resource": "Urea Gas",
-        "amount": 80.0
-      },
-      {
-        "resource": "Purified Water",
-        "amount": 20.0
+        "resource": "railgun-dart",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Advanced Chemical Plant"
-  },
-  "Ammonia Synthesis": {
     "inputs": [
       {
-        "resource": "Red Metal Catalyst",
-        "amount": 1.0
+        "resource": "steel-plate",
+        "amount": 5
       },
       {
-        "resource": "Hydrogen Gas",
-        "amount": 50.0
-      },
-      {
-        "resource": "Nitrogen Gas",
-        "amount": 50.0
+        "resource": "electronic-circuit",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "red-wire": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Metal Catalyst Carrier",
-        "amount": 1.0
-      },
-      {
-        "resource": "Ammonia Gas",
-        "amount": 100.0
+        "resource": "red-wire",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Advanced Chemical Plant"
-  },
-  "100x Ammonia Gas": {
     "inputs": [
       {
-        "resource": "Blue Cellulose Fiber",
-        "amount": 20.0
+        "resource": "copper-cable",
+        "amount": 1
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "refined-concrete": {
+    "category": "crafting-with-fluid",
+    "time": 15,
     "outputs": [
       {
-        "resource": "Ammonia Gas",
-        "amount": 100.0
+        "resource": "refined-concrete",
+        "amount": 10
       }
     ],
-    "time": 30.0,
-    "building": "Liquifier"
-  },
-  "Air Separation: Nitrogen Gas, Oxygen Gas": {
     "inputs": [
       {
-        "resource": "Compressed Air",
-        "amount": 100.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Nitrogen Gas",
-        "amount": 50.0
+        "resource": "steel-plate",
+        "amount": 1
       },
       {
-        "resource": "Oxygen Gas",
-        "amount": 50.0
+        "resource": "iron-stick",
+        "amount": 8
+      },
+      {
+        "resource": "concrete",
+        "amount": 20
+      },
+      {
+        "resource": "water",
+        "amount": 100
+      }
+    ]
+  },
+  "refined-hazard-concrete": {
+    "category": "crafting",
+    "time": 0.25,
+    "outputs": [
+      {
+        "resource": "refined-hazard-concrete",
+        "amount": 10
       }
     ],
-    "time": 2.0,
-    "building": "Advanced Chemical Plant"
-  },
-  "Crystal Slurry (Blue Geode)": {
     "inputs": [
       {
-        "resource": "Blue Geode",
-        "amount": 5.0
-      },
-      {
-        "resource": "Sulfuric Acid",
-        "amount": 15.0
+        "resource": "refined-concrete",
+        "amount": 10
       }
-    ],
+    ]
+  },
+  "repair-pack": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Crystal Slurry",
-        "amount": 20.0
+        "resource": "repair-pack",
+        "amount": 1
       }
     ],
-    "time": 3.0,
-    "building": "Liquifier"
-  },
-  "Crystal Slurry (Cyan Geode)": {
     "inputs": [
       {
-        "resource": "Cyan Geode",
-        "amount": 5.0
+        "resource": "iron-gear-wheel",
+        "amount": 2
       },
       {
-        "resource": "Sulfuric Acid",
-        "amount": 15.0
+        "resource": "electronic-circuit",
+        "amount": 2
       }
-    ],
+    ]
+  },
+  "roboport": {
+    "category": "crafting",
+    "time": 5,
     "outputs": [
       {
-        "resource": "Crystal Slurry",
-        "amount": 50.0
+        "resource": "roboport",
+        "amount": 1
       }
     ],
-    "time": 3.0,
-    "building": "Liquifier"
-  },
-  "Crystal Slurry (Lightgreen Geode)": {
     "inputs": [
       {
-        "resource": "Lightgreen Geode",
-        "amount": 5.0
+        "resource": "steel-plate",
+        "amount": 45
       },
       {
-        "resource": "Sulfuric Acid",
-        "amount": 15.0
+        "resource": "iron-gear-wheel",
+        "amount": 45
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 45
       }
-    ],
+    ]
+  },
+  "rocket": {
+    "category": "crafting",
+    "time": 8,
     "outputs": [
       {
-        "resource": "Crystal Slurry",
-        "amount": 50.0
+        "resource": "rocket",
+        "amount": 1
       }
     ],
-    "time": 3.0,
-    "building": "Liquifier"
-  },
-  "Crystal Slurry (Purple Geode)": {
     "inputs": [
       {
-        "resource": "Purple Geode",
-        "amount": 5.0
+        "resource": "iron-plate",
+        "amount": 2
       },
       {
-        "resource": "Sulfuric Acid",
-        "amount": 15.0
+        "resource": "explosives",
+        "amount": 1
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "rocket-control-unit": {
+    "category": "crafting",
+    "time": 30,
     "outputs": [
       {
-        "resource": "Crystal Slurry",
-        "amount": 40.0
+        "resource": "rocket-control-unit",
+        "amount": 1
       }
     ],
-    "time": 3.0,
-    "building": "Liquifier"
-  },
-  "Crystal Slurry (Red Geode)": {
     "inputs": [
       {
-        "resource": "Red Geode",
-        "amount": 5.0
+        "resource": "processing-unit",
+        "amount": 1
       },
       {
-        "resource": "Sulfuric Acid",
-        "amount": 15.0
+        "resource": "speed-module",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "rocket-fuel": {
+    "category": "crafting-with-fluid",
+    "time": 30,
     "outputs": [
       {
-        "resource": "Crystal Slurry",
-        "amount": 20.0
+        "resource": "rocket-fuel",
+        "amount": 1
       }
     ],
-    "time": 3.0,
-    "building": "Liquifier"
-  },
-  "Crystal Slurry (Yellow Geode)": {
     "inputs": [
       {
-        "resource": "Yellow Geode",
-        "amount": 5.0
+        "resource": "solid-fuel",
+        "amount": 10
       },
       {
-        "resource": "Sulfuric Acid",
-        "amount": 15.0
+        "resource": "light-oil",
+        "amount": 10
       }
-    ],
+    ]
+  },
+  "rocket-launcher": {
+    "category": "crafting",
+    "time": 10,
     "outputs": [
       {
-        "resource": "Crystal Slurry",
-        "amount": 30.0
+        "resource": "rocket-launcher",
+        "amount": 1
       }
     ],
-    "time": 3.0,
-    "building": "Liquifier"
-  },
-  "4x Silicon Ore": {
     "inputs": [
       {
-        "resource": "Crystal Catalyst",
-        "amount": 1.0
+        "resource": "iron-plate",
+        "amount": 5
       },
       {
-        "resource": "Saphirite Chunks",
-        "amount": 2.0
+        "resource": "iron-gear-wheel",
+        "amount": 5
       },
       {
-        "resource": "Bobmonium Chunks",
-        "amount": 2.0
+        "resource": "electronic-circuit",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "rocket-part": {
+    "category": "rocket-building",
+    "time": 3,
     "outputs": [
       {
-        "resource": "Silicon Ore",
-        "amount": 4.0
+        "resource": "rocket-part",
+        "amount": 1
       }
     ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "4x Nickel Ore": {
     "inputs": [
       {
-        "resource": "Crystal Catalyst",
-        "amount": 1.0
+        "resource": "rocket-control-unit",
+        "amount": 10
       },
       {
-        "resource": "Saphirite Chunks",
-        "amount": 2.0
+        "resource": "low-density-structure",
+        "amount": 10
       },
       {
-        "resource": "Rubyte Chunks",
-        "amount": 2.0
+        "resource": "rocket-fuel",
+        "amount": 10
       }
-    ],
+    ]
+  },
+  "rocket-silo": {
+    "category": "crafting",
+    "time": 30,
     "outputs": [
       {
-        "resource": "Nickel Ore",
-        "amount": 4.0
+        "resource": "rocket-silo",
+        "amount": 1
       }
     ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "4x Aluminium Ore": {
     "inputs": [
       {
-        "resource": "Crystal Catalyst",
-        "amount": 1.0
+        "resource": "steel-plate",
+        "amount": 1000
       },
       {
-        "resource": "Jivolite Chunks",
-        "amount": 2.0
+        "resource": "processing-unit",
+        "amount": 200
       },
       {
-        "resource": "Rubyte Chunks",
-        "amount": 2.0
+        "resource": "electric-engine-unit",
+        "amount": 200
+      },
+      {
+        "resource": "pipe",
+        "amount": 100
+      },
+      {
+        "resource": "concrete",
+        "amount": 1000
       }
-    ],
+    ]
+  },
+  "satellite": {
+    "category": "crafting",
+    "time": 5,
     "outputs": [
       {
-        "resource": "Aluminium Ore",
-        "amount": 4.0
+        "resource": "satellite",
+        "amount": 1
       }
     ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "4x Zinc Ore": {
     "inputs": [
       {
-        "resource": "Crystal Catalyst",
-        "amount": 1.0
+        "resource": "processing-unit",
+        "amount": 100
       },
       {
-        "resource": "Jivolite Chunks",
-        "amount": 2.0
+        "resource": "low-density-structure",
+        "amount": 100
       },
       {
-        "resource": "Bobmonium Chunks",
-        "amount": 2.0
+        "resource": "rocket-fuel",
+        "amount": 50
+      },
+      {
+        "resource": "solar-panel",
+        "amount": 100
+      },
+      {
+        "resource": "accumulator",
+        "amount": 100
+      },
+      {
+        "resource": "radar",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "shotgun": {
+    "category": "crafting",
+    "time": 10,
     "outputs": [
       {
-        "resource": "Zinc Ore",
-        "amount": 4.0
+        "resource": "shotgun",
+        "amount": 1
       }
     ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "2x Fluorite Ore": {
     "inputs": [
       {
-        "resource": "Crystal Catalyst",
-        "amount": 1.0
+        "resource": "wood",
+        "amount": 5
       },
       {
-        "resource": "Stiratite Chunks",
-        "amount": 2.0
+        "resource": "iron-plate",
+        "amount": 15
       },
       {
-        "resource": "Rubyte Chunks",
-        "amount": 2.0
+        "resource": "copper-plate",
+        "amount": 10
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "shotgun-shell": {
+    "category": "crafting",
+    "time": 3,
     "outputs": [
       {
-        "resource": "Fluorite Ore",
-        "amount": 2.0
+        "resource": "shotgun-shell",
+        "amount": 1
       }
     ],
-    "time": 1.0,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "Saphirite Chunks Sorting": {
     "inputs": [
       {
-        "resource": "Saphirite Chunks",
-        "amount": 6.0
+        "resource": "iron-plate",
+        "amount": 2
+      },
+      {
+        "resource": "copper-plate",
+        "amount": 2
       }
-    ],
+    ]
+  },
+  "slowdown-capsule": {
+    "category": "crafting",
+    "time": 8,
     "outputs": [
       {
-        "resource": "Slag",
-        "amount": 1.0
-      },
-      {
-        "resource": "Iron ore",
-        "amount": 2.0
-      },
-      {
-        "resource": "Copper ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Silicon Ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Nickel Ore",
-        "amount": 1.0
+        "resource": "slowdown-capsule",
+        "amount": 1
       }
     ],
-    "time": 1.5,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "Jivolite Chunks Sorting": {
     "inputs": [
       {
-        "resource": "Jivolite Chunks",
-        "amount": 6.0
+        "resource": "coal",
+        "amount": 5
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 2
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 2
       }
-    ],
+    ]
+  },
+  "small-electric-pole": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Slag",
-        "amount": 1.0
-      },
-      {
-        "resource": "Iron ore",
-        "amount": 2.0
-      },
-      {
-        "resource": "Copper ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Aluminium Ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Zinc Ore",
-        "amount": 1.0
+        "resource": "small-electric-pole",
+        "amount": 2
       }
     ],
-    "time": 1.5,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "Stiratite Chunks Sorting": {
     "inputs": [
       {
-        "resource": "Stiratite Chunks",
-        "amount": 6.0
+        "resource": "wood",
+        "amount": 1
+      },
+      {
+        "resource": "copper-cable",
+        "amount": 2
       }
-    ],
+    ]
+  },
+  "small-lamp": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Slag",
-        "amount": 1.0
-      },
-      {
-        "resource": "Iron ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Copper ore",
-        "amount": 2.0
-      },
-      {
-        "resource": "Cobalt Ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Tin Ore",
-        "amount": 1.0
+        "resource": "small-lamp",
+        "amount": 1
       }
     ],
-    "time": 1.5,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "Crotinnium Chunks Sorting": {
     "inputs": [
       {
-        "resource": "Crotinnium Chunks",
-        "amount": 6.0
+        "resource": "iron-plate",
+        "amount": 1
+      },
+      {
+        "resource": "copper-cable",
+        "amount": 3
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "small-plane": {
+    "category": "crafting",
+    "time": 30,
     "outputs": [
       {
-        "resource": "Slag",
-        "amount": 1.0
-      },
-      {
-        "resource": "Iron ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Copper ore",
-        "amount": 2.0
-      },
-      {
-        "resource": "Lead Ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Silver Ore",
-        "amount": 1.0
+        "resource": "small-plane",
+        "amount": 1
       }
     ],
-    "time": 1.5,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "Rubyte Chunks Sorting": {
     "inputs": [
       {
-        "resource": "Rubyte Chunks",
-        "amount": 6.0
+        "resource": "plastic-bar",
+        "amount": 100
+      },
+      {
+        "resource": "battery",
+        "amount": 100
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 200
+      },
+      {
+        "resource": "electric-engine-unit",
+        "amount": 20
       }
-    ],
+    ]
+  },
+  "solar-panel": {
+    "category": "crafting",
+    "time": 10,
     "outputs": [
       {
-        "resource": "Slag",
-        "amount": 1.0
-      },
-      {
-        "resource": "Nickel ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Aluminium ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Lead Ore",
-        "amount": 2.0
-      },
-      {
-        "resource": "Gold Ore",
-        "amount": 1.0
+        "resource": "solar-panel",
+        "amount": 1
       }
     ],
-    "time": 1.5,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "Bobmonium Chunks Sorting": {
     "inputs": [
       {
-        "resource": "Bobmonium Chunks",
-        "amount": 6.0
+        "resource": "copper-plate",
+        "amount": 5
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 5
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 15
       }
-    ],
+    ]
+  },
+  "solar-panel-equipment": {
+    "category": "crafting",
+    "time": 10,
     "outputs": [
       {
-        "resource": "Slag",
-        "amount": 1.0
-      },
-      {
-        "resource": "Silicon ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Cobalt ore",
-        "amount": 1.0
-      },
-      {
-        "resource": "Tin Ore",
-        "amount": 2.0
-      },
-      {
-        "resource": "Zinc Ore",
-        "amount": 1.0
+        "resource": "solar-panel-equipment",
+        "amount": 1
       }
     ],
-    "time": 1.5,
-    "building": "Ore Sorting Facility Mk2"
-  },
-  "Saphirite Hydro Refining": {
     "inputs": [
       {
-        "resource": "Crushed Saphirite",
-        "amount": 2.0
+        "resource": "steel-plate",
+        "amount": 5
       },
       {
-        "resource": "Purified Water",
-        "amount": 50.0
+        "resource": "advanced-circuit",
+        "amount": 2
+      },
+      {
+        "resource": "solar-panel",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "speed-module": {
+    "category": "crafting",
+    "time": 15,
     "outputs": [
       {
-        "resource": "Saphirite Chunks",
-        "amount": 2.0
-      },
-      {
-        "resource": "Blue Geode",
-        "amount": 0.5
-      },
-      {
-        "resource": "Sulfuric Waste Water",
-        "amount": 50.0
+        "resource": "speed-module",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Flotation Cell"
-  },
-  "Jivolite Hydro Refining": {
     "inputs": [
       {
-        "resource": "Crushed Jivolite",
-        "amount": 2.0
+        "resource": "electronic-circuit",
+        "amount": 5
       },
       {
-        "resource": "Purified Water",
-        "amount": 50.0
+        "resource": "advanced-circuit",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "speed-module-2": {
+    "category": "crafting",
+    "time": 30,
     "outputs": [
       {
-        "resource": "Jivolite Chunks",
-        "amount": 2.0
-      },
-      {
-        "resource": "Purple Geode",
-        "amount": 0.5
-      },
-      {
-        "resource": "Fluoric Waste Water",
-        "amount": 50.0
+        "resource": "speed-module-2",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Flotation Cell"
-  },
-  "Stiratite Hydro Refining": {
     "inputs": [
       {
-        "resource": "Crushed Stiratite",
-        "amount": 2.0
+        "resource": "advanced-circuit",
+        "amount": 5
       },
       {
-        "resource": "Purified Water",
-        "amount": 50.0
+        "resource": "processing-unit",
+        "amount": 5
+      },
+      {
+        "resource": "speed-module",
+        "amount": 4
       }
-    ],
+    ]
+  },
+  "speed-module-3": {
+    "category": "crafting",
+    "time": 60,
     "outputs": [
       {
-        "resource": "Stiratite Chunks",
-        "amount": 2.0
-      },
-      {
-        "resource": "Yellow Geode",
-        "amount": 0.5
-      },
-      {
-        "resource": "Sulfuric Waste Water",
-        "amount": 50.0
+        "resource": "speed-module-3",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Flotation Cell"
-  },
-  "Crotinnium Hydro Refining": {
     "inputs": [
       {
-        "resource": "Crushed Crotinnium",
-        "amount": 2.0
+        "resource": "advanced-circuit",
+        "amount": 5
       },
       {
-        "resource": "Purified Water",
-        "amount": 50.0
+        "resource": "processing-unit",
+        "amount": 5
+      },
+      {
+        "resource": "speed-module-2",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "splitter": {
+    "category": "crafting",
+    "time": 1,
     "outputs": [
       {
-        "resource": "Crotinnium Chunks",
-        "amount": 2.0
-      },
-      {
-        "resource": "Lightgreen Geode",
-        "amount": 0.5
-      },
-      {
-        "resource": "Chloric Waste Water",
-        "amount": 50.0
+        "resource": "splitter",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Flotation Cell"
-  },
-  "Rubyte Hydro Refining": {
     "inputs": [
       {
-        "resource": "Crushed Rubyte",
-        "amount": 2.0
+        "resource": "iron-plate",
+        "amount": 5
       },
       {
-        "resource": "Purified Water",
-        "amount": 50.0
+        "resource": "electronic-circuit",
+        "amount": 5
+      },
+      {
+        "resource": "transport-belt",
+        "amount": 4
       }
-    ],
+    ]
+  },
+  "stack-filter-inserter": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Rubyte Chunks",
-        "amount": 2.0
-      },
-      {
-        "resource": "Cyan Geode",
-        "amount": 0.5
-      },
-      {
-        "resource": "Nitric Waste Water",
-        "amount": 50.0
+        "resource": "stack-filter-inserter",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Flotation Cell"
-  },
-  "Bobmonium Hydro Refining": {
     "inputs": [
       {
-        "resource": "Crushed Bobmonium",
-        "amount": 2.0
+        "resource": "electronic-circuit",
+        "amount": 5
       },
       {
-        "resource": "Purified Water",
-        "amount": 50.0
+        "resource": "stack-inserter",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "stack-inserter": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Bobmonium Chunks",
-        "amount": 2.0
-      },
-      {
-        "resource": "Cyan Geode",
-        "amount": 0.5
-      },
-      {
-        "resource": "Nitric Waste Water",
-        "amount": 50.0
+        "resource": "stack-inserter",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Flotation Cell"
-  },
-  "Stone brick (Recipe)": {
     "inputs": [
       {
-        "resource": "Stone",
-        "amount": 2.0
+        "resource": "iron-gear-wheel",
+        "amount": 15
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 15
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 1
+      },
+      {
+        "resource": "fast-inserter",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "steam-engine": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Stone brick",
-        "amount": 1.0
+        "resource": "steam-engine",
+        "amount": 1
       }
     ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 10
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 8
+      },
+      {
+        "resource": "pipe",
+        "amount": 5
+      }
+    ]
+  },
+  "steam-turbine": {
+    "category": "crafting",
+    "time": 3,
+    "outputs": [
+      {
+        "resource": "steam-turbine",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "copper-plate",
+        "amount": 50
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 50
+      },
+      {
+        "resource": "pipe",
+        "amount": 20
+      }
+    ]
+  },
+  "steel-chest": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "steel-chest",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 8
+      }
+    ]
+  },
+  "steel-furnace": {
+    "category": "crafting",
+    "time": 3,
+    "outputs": [
+      {
+        "resource": "steel-furnace",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 6
+      },
+      {
+        "resource": "stone-brick",
+        "amount": 10
+      }
+    ]
+  },
+  "steel-plate": {
+    "category": "smelting",
+    "time": 16,
+    "outputs": [
+      {
+        "resource": "steel-plate",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 5
+      }
+    ]
+  },
+  "stone-brick": {
+    "category": "smelting",
     "time": 3.2,
-    "building": "Furnace"
-  },
-  "Crystal Slurry to Mineral Sludge Coal Filtering": {
-    "inputs": [
-      {
-        "resource": "Charcoal filter",
-        "amount": 1.0
-      },
-      {
-        "resource": "Crystal Slurry",
-        "amount": 50.0
-      },
-      {
-        "resource": "Mineralized Water",
-        "amount": 100.0
-      }
-    ],
     "outputs": [
       {
-        "resource": "Filter Frame",
-        "amount": 1.0
-      },
-      {
-        "resource": "Mineral Sludge",
-        "amount": 50.0
-      },
-      {
-        "resource": "Sulfuric Waste Water",
-        "amount": 40.0
+        "resource": "stone-brick",
+        "amount": 1
       }
     ],
-    "time": 3.0,
-    "building": "Filtration Unit"
-  },
-  "Crystal Slurry to Mineral Sludge Ceramic Filtering": {
     "inputs": [
       {
-        "resource": "Ceramic Filter",
-        "amount": 1.0
-      },
-      {
-        "resource": "Crystal Slurry",
-        "amount": 35.0
-      },
-      {
-        "resource": "Mineralized Water",
-        "amount": 100.0
+        "resource": "stone",
+        "amount": 2
       }
-    ],
-    "outputs": [
-      {
-        "resource": "Spent Ceramic Filter",
-        "amount": 1.0
-      },
-      {
-        "resource": "Mineral Sludge",
-        "amount": 35.0
-      },
-      {
-        "resource": "Sulfuric Waste Water",
-        "amount": 20.0
-      }
-    ],
-    "time": 1.5,
-    "building": "Filtration Unit"
+    ]
   },
-  "Ceramic Filter (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Filter Frame",
-        "amount": 1.0
-      },
-      {
-        "resource": "Alumina",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Ceramic Filter",
-        "amount": 1.0
-      }
-    ],
-    "time": 1.0,
-    "building": "Assembling Machine"
-  },
-  "Ceramic Filter (Recycle)": {
-    "inputs": [
-      {
-        "resource": "Spent Ceramic Filter",
-        "amount": 1.0
-      },
-      {
-        "resource": "Purified Water",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Ceramic Filter",
-        "amount": 1.0
-      }
-    ],
+  "stone-furnace": {
+    "category": "crafting",
     "time": 0.5,
-    "building": "Assembling Machine Mk2"
-  },
-  "Slurry Ceramic Filtering": {
-    "inputs": [
-      {
-        "resource": "Ceramic Filter",
-        "amount": 1.0
-      },
-      {
-        "resource": "Slag Slurry",
-        "amount": 35.0
-      },
-      {
-        "resource": "Purified Water",
-        "amount": 50.0
-      }
-    ],
     "outputs": [
       {
-        "resource": "Spent Ceramic Filter",
-        "amount": 1.0
-      },
-      {
-        "resource": "Mineral Sludge",
-        "amount": 35.0
-      },
-      {
-        "resource": "Sulfuric Waste Water",
-        "amount": 20.0
+        "resource": "stone-furnace",
+        "amount": 1
       }
     ],
-    "time": 2.0,
-    "building": "Filtration Unit"
-  },
-  "Chlorine Gas (Recipe)": {
     "inputs": [
       {
-        "resource": "Saline Water",
-        "amount": 100.0
+        "resource": "stone",
+        "amount": 5
       }
-    ],
-    "outputs": [
-      {
-        "resource": "Sodium Hydroxide",
-        "amount": 1.0
-      },
-      {
-        "resource": "Chlorine Gas",
-        "amount": 40.0
-      },
-      {
-        "resource": "Hydrogen Gas",
-        "amount": 60.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Electrolyser"
+    ]
   },
-  "Reversed Water Gas Shift": {
-    "inputs": [
-      {
-        "resource": "Hydrogen Gas",
-        "amount": 50.0
-      },
-      {
-        "resource": "Carbon Dioxide",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Purified Water",
-        "amount": 50.0
-      },
-      {
-        "resource": "Carbon Monoxide",
-        "amount": 50.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Chemical Plant"
-  },
-  "Aluminium Hydroxide (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Sodium Hydroxide",
-        "amount": 3.0
-      },
-      {
-        "resource": "Aluminium Ore",
-        "amount": 12.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Aluminium Hydroxide",
-        "amount": 12.0
-      }
-    ],
-    "time": 6.0,
-    "building": "Powder Mixer"
-  },
-  "24x Gold Ingot": {
-    "inputs": [
-      {
-        "resource": "Gold Ore",
-        "amount": 24.0
-      },
-      {
-        "resource": "Chlorine Gas",
-        "amount": 60.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Gold Ingot",
-        "amount": 24.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Blast Furnace"
-  },
-  "24x Nickel Ingot": {
-    "inputs": [
-      {
-        "resource": "Nickel Ore",
-        "amount": 24.0
-      },
-      {
-        "resource": "Carbon Monoxide",
-        "amount": 60.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Nickel Ingot",
-        "amount": 24.0
-      }
-    ],
-    "time": 4.0,
-    "building": "Blast Furnace"
-  },
-  "Advanced Circuit (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Electronic circuit",
-        "amount": 2.0
-      },
-      {
-        "resource": "Electronic circuit board",
-        "amount": 2.0
-      },
-      {
-        "resource": "Aluminium plate",
-        "amount": 4.0
-      },
-      {
-        "resource": "Copper cable",
-        "amount": 4.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Advanced circuit",
-        "amount": 1.0
-      }
-    ],
-    "time": 6.0,
-    "building": "Assembling Machine"
-  },
-  "Electronic circuit board (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Solder",
-        "amount": 1.0
-      },
-      {
-        "resource": "Basic electronic components",
-        "amount": 4.0
-      },
-      {
-        "resource": "Transistors",
-        "amount": 4.0
-      },
-      {
-        "resource": "Circuit board",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Electronic circuit board",
-        "amount": 1.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Assembling Machine"
-  },
-  "5x Transistors": {
-    "inputs": [
-      {
-        "resource": "Plastic bar",
-        "amount": 1.0
-      },
-      {
-        "resource": "Silicon wafer",
-        "amount": 2.0
-      },
-      {
-        "resource": "Tinned copper wire",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Transistors",
-        "amount": 5.0
-      }
-    ],
-    "time": 3.5,
-    "building": "Assembling machine"
-  },
-  "8x Silicon wafer": {
-    "inputs": [
-      {
-        "resource": "Mono Silicon",
-        "amount": 1.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Silicon wafer",
-        "amount": 8.0
-      }
-    ],
-    "time": 5.0,
-    "building": "Assembling machine"
-  },
-  "4x Mono Silicon": {
-    "inputs": [
-      {
-        "resource": "Mono Silicon Seed",
-        "amount": 1.0
-      },
-      {
-        "resource": "Molten Silicon",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Mono Silicon",
-        "amount": 4.0
-      }
-    ],
-    "time": 6.0,
-    "building": "Casting Machine"
-  },
-  "4x Plastic bar": {
-    "inputs": [
-      {
-        "resource": "Liquid Plastic",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Plastic bar",
-        "amount": 4.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Assembling machine"
-  },
-  "10x Liquid Plastic": {
-    "inputs": [
-      {
-        "resource": "Propene Gas",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Liquid Plastic",
-        "amount": 10.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Chemical plant"
-  },
-  "Synthesis Propene": {
-    "inputs": [
-      {
-        "resource": "Methanol Gas",
-        "amount": 100.0
-      },
-      {
-        "resource": "Steam",
-        "amount": 50.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Propene Gas",
-        "amount": 80.0
-      },
-      {
-        "resource": "Residual Gas",
-        "amount": 20.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Steam Cracker"
-  },
-  "Catalytic Synthesis Methanol": {
-    "inputs": [
-      {
-        "resource": "Green Metal Catalyst",
-        "amount": 1.0
-      },
-      {
-        "resource": "Carbon Dioxide",
-        "amount": 100.0
-      },
-      {
-        "resource": "Hydrogen Gas",
-        "amount": 100.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Metal Catalyst Carrier",
-        "amount": 1.0
-      },
-      {
-        "resource": "Methanol Gas",
-        "amount": 100.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Chemical Plant"
-  },
-  "Methanol Gas (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Cellulose Fiber",
-        "amount": 20.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Methanol Gas",
-        "amount": 100.0
-      }
-    ],
-    "time": 30.0,
-    "building": "Chemical plant"
-  },
-  "Electronic circuit (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Basic electronic board",
-        "amount": 1.0
-      },
-      {
-        "resource": "Iron plate",
-        "amount": 2.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Electronic circuit",
-        "amount": 1.0
-      }
-    ],
+  "stone-wall": {
+    "category": "crafting",
     "time": 0.5,
-    "building": "Assembling machine"
-  },
-  "Circuit board (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Phenolic board",
-        "amount": 1.0
-      },
-      {
-        "resource": "Copper plate",
-        "amount": 1.0
-      },
-      {
-        "resource": "Tin plate",
-        "amount": 1.0
-      },
-      {
-        "resource": "Ferric Chloride Solution",
-        "amount": 5.0
-      }
-    ],
     "outputs": [
       {
-        "resource": "Circuit board",
-        "amount": 1.0
+        "resource": "stone-wall",
+        "amount": 1
       }
     ],
-    "time": 5.0,
-    "building": "Assembling machine"
-  },
-  "2x Phenolic board": {
     "inputs": [
       {
-        "resource": "Wooden board",
-        "amount": 2.0
-      },
-      {
-        "resource": "Resin",
-        "amount": 1.0
+        "resource": "stone-brick",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "storage-tank": {
+    "category": "crafting",
+    "time": 3,
     "outputs": [
       {
-        "resource": "Phenolic board",
-        "amount": 2.0
+        "resource": "storage-tank",
+        "amount": 1
       }
     ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 20
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 5
+      }
+    ]
+  },
+  "submachine-gun": {
+    "category": "crafting",
+    "time": 10,
+    "outputs": [
+      {
+        "resource": "submachine-gun",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "iron-plate",
+        "amount": 10
+      },
+      {
+        "resource": "copper-plate",
+        "amount": 5
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 10
+      }
+    ]
+  },
+  "substation": {
+    "category": "crafting",
     "time": 0.5,
-    "building": "Assembling machine"
-  },
-  "Ferric Chloride Solution (Recipe)": {
+    "outputs": [
+      {
+        "resource": "substation",
+        "amount": 1
+      }
+    ],
     "inputs": [
       {
-        "resource": "Iron ore",
-        "amount": 2.0
+        "resource": "copper-plate",
+        "amount": 5
       },
       {
-        "resource": "Hydrogen Chloride Gas",
-        "amount": 40.0
-      }
-    ],
-    "outputs": [
-      {
-        "resource": "Ferric Chloride Solution",
-        "amount": 40.0
-      }
-    ],
-    "time": 2.0,
-    "building": "Chemical Plant"
-  },
-  "Hydrogen Chloride Gas (Recipe)": {
-    "inputs": [
-      {
-        "resource": "Chlorine Gas",
-        "amount": 50.0
+        "resource": "steel-plate",
+        "amount": 10
       },
       {
-        "resource": "Hydrogen Gas",
-        "amount": 50.0
+        "resource": "advanced-circuit",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "sulfur": {
+    "category": "chemistry",
+    "time": 1,
     "outputs": [
       {
-        "resource": "Hydrogen Chloride Gas",
-        "amount": 100.0
+        "resource": "sulfur",
+        "amount": 2
       }
     ],
-    "time": 2.0,
-    "building": "Chemical Plant"
-  },
-  "Invar plate (Recipe)": {
     "inputs": [
       {
-        "resource": "Molten Invar",
-        "amount": 40.0
+        "resource": "water",
+        "amount": 30
+      },
+      {
+        "resource": "petroleum-gas",
+        "amount": 30
       }
-    ],
+    ]
+  },
+  "sulfuric-acid": {
+    "category": "chemistry",
+    "time": 1,
     "outputs": [
       {
-        "resource": "Invar plate",
-        "amount": 4.0
+        "resource": "sulfuric-acid",
+        "amount": 50
       }
     ],
-    "time": 4.0,
-    "building": "Casting Machine"
-  },
-  "Nickel plate (Recipe)": {
     "inputs": [
       {
-        "resource": "Molten Nickel",
-        "amount": 40.0
+        "resource": "iron-plate",
+        "amount": 1
+      },
+      {
+        "resource": "sulfur",
+        "amount": 5
+      },
+      {
+        "resource": "water",
+        "amount": 100
       }
-    ],
+    ]
+  },
+  "tank": {
+    "category": "crafting",
+    "time": 5,
     "outputs": [
       {
-        "resource": "Nickel plate",
-        "amount": 4.0
+        "resource": "tank",
+        "amount": 1
       }
     ],
-    "time": 4.0,
-    "building": "Casting Machine"
-  },
-  "Gold plate (Recipe)": {
     "inputs": [
       {
-        "resource": "Molten Gold",
-        "amount": 40.0
+        "resource": "steel-plate",
+        "amount": 50
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 15
+      },
+      {
+        "resource": "advanced-circuit",
+        "amount": 10
+      },
+      {
+        "resource": "engine-unit",
+        "amount": 32
       }
-    ],
+    ]
+  },
+  "train-stop": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Gold plate",
-        "amount": 4.0
+        "resource": "train-stop",
+        "amount": 1
       }
     ],
-    "time": 4.0,
-    "building": "Casting Machine"
-  },
-  "Cobalt steel plate (Recipe)": {
     "inputs": [
       {
-        "resource": "Molten Cobalt Steel",
-        "amount": 40.0
+        "resource": "iron-plate",
+        "amount": 6
+      },
+      {
+        "resource": "steel-plate",
+        "amount": 3
+      },
+      {
+        "resource": "iron-stick",
+        "amount": 6
+      },
+      {
+        "resource": "electronic-circuit",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "transport-belt": {
+    "category": "crafting",
+    "time": 0.5,
     "outputs": [
       {
-        "resource": "Cobalt steel plate",
-        "amount": 4.0
+        "resource": "transport-belt",
+        "amount": 2
       }
     ],
-    "time": 4.0,
-    "building": "Casting Machine"
-  },
-  "Cobalt plate (Recipe)": {
     "inputs": [
       {
-        "resource": "Molten Cobalt",
-        "amount": 40.0
+        "resource": "iron-plate",
+        "amount": 1
+      },
+      {
+        "resource": "iron-gear-wheel",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "underground-belt": {
+    "category": "crafting",
+    "time": 1,
     "outputs": [
       {
-        "resource": "Cobalt plate",
-        "amount": 4.0
+        "resource": "underground-belt",
+        "amount": 2
       }
     ],
-    "time": 4.0,
-    "building": "Casting Machine"
-  },
-  "Zinc plate (Recipe)": {
     "inputs": [
       {
-        "resource": "Molten Zinc",
-        "amount": 40.0
+        "resource": "iron-plate",
+        "amount": 10
+      },
+      {
+        "resource": "transport-belt",
+        "amount": 5
       }
-    ],
+    ]
+  },
+  "uranium-cannon-shell": {
+    "category": "crafting",
+    "time": 12,
     "outputs": [
       {
-        "resource": "Zinc plate",
-        "amount": 4.0
+        "resource": "uranium-cannon-shell",
+        "amount": 1
       }
     ],
-    "time": 4.0,
-    "building": "Casting Machine"
-  },
-  "Brass plate (Recipe)": {
     "inputs": [
       {
-        "resource": "Molten Brass",
-        "amount": 40.0
+        "resource": "uranium-238",
+        "amount": 1
+      },
+      {
+        "resource": "cannon-shell",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "uranium-fuel-cell": {
+    "category": "crafting",
+    "time": 10,
     "outputs": [
       {
-        "resource": "Brass plate",
-        "amount": 4.0
+        "resource": "uranium-fuel-cell",
+        "amount": 10
       }
     ],
-    "time": 4.0,
-    "building": "Casting Machine"
-  },
-  "Gunmetal plate (Recipe)": {
     "inputs": [
       {
-        "resource": "Molten Gunmetal",
-        "amount": 40.0
+        "resource": "iron-plate",
+        "amount": 10
+      },
+      {
+        "resource": "uranium-235",
+        "amount": 1
+      },
+      {
+        "resource": "uranium-238",
+        "amount": 19
       }
-    ],
+    ]
+  },
+  "uranium-rounds-magazine": {
+    "category": "crafting",
+    "time": 10,
     "outputs": [
       {
-        "resource": "Gunmetal plate",
-        "amount": 4.0
+        "resource": "uranium-rounds-magazine",
+        "amount": 1
       }
     ],
-    "time": 4.0,
-    "building": "Casting Machine"
-  },
-  "Silver plate (Recipe)": {
     "inputs": [
       {
-        "resource": "Molten Silver",
-        "amount": 40.0
+        "resource": "uranium-238",
+        "amount": 1
+      },
+      {
+        "resource": "piercing-rounds-magazine",
+        "amount": 1
       }
-    ],
+    ]
+  },
+  "utility-science-pack": {
+    "category": "crafting",
+    "time": 21,
     "outputs": [
       {
-        "resource": "Silver plate",
-        "amount": 4.0
+        "resource": "utility-science-pack",
+        "amount": 3
       }
     ],
-    "time": 4.0,
-    "building": "Casting Machine"
+    "inputs": [
+      {
+        "resource": "processing-unit",
+        "amount": 2
+      },
+      {
+        "resource": "flying-robot-frame",
+        "amount": 1
+      },
+      {
+        "resource": "low-density-structure",
+        "amount": 3
+      }
+    ]
+  },
+  "wooden-chest": {
+    "category": "crafting",
+    "time": 0.5,
+    "outputs": [
+      {
+        "resource": "wooden-chest",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "wood",
+        "amount": 2
+      }
+    ]
+  },
+  "basic-oil-processing": {
+    "category": "oil-processing",
+    "time": 5,
+    "outputs": [
+      {
+        "resource": "petroleum-gas",
+        "amount": 45
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "crude-oil",
+        "amount": 100
+      }
+    ]
+  },
+  "advanced-oil-processing": {
+    "category": "oil-processing",
+    "time": 5,
+    "outputs": [
+      {
+        "resource": "heavy-oil",
+        "amount": 25
+      },
+      {
+        "resource": "light-oil",
+        "amount": 45
+      },
+      {
+        "resource": "petroleum-gas",
+        "amount": 55
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "water",
+        "amount": 50
+      },
+      {
+        "resource": "crude-oil",
+        "amount": 100
+      }
+    ]
+  },
+  "coal-liquefaction": {
+    "category": "oil-processing",
+    "time": 5,
+    "outputs": [
+      {
+        "resource": "heavy-oil",
+        "amount": 90
+      },
+      {
+        "resource": "light-oil",
+        "amount": 20
+      },
+      {
+        "resource": "petroleum-gas",
+        "amount": 10
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "coal",
+        "amount": 10
+      },
+      {
+        "resource": "heavy-oil",
+        "amount": 25
+      },
+      {
+        "resource": "steam",
+        "amount": 50
+      }
+    ]
+  },
+  "heavy-oil-cracking": {
+    "category": "chemistry",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "light-oil",
+        "amount": 30
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "water",
+        "amount": 30
+      },
+      {
+        "resource": "heavy-oil",
+        "amount": 40
+      }
+    ]
+  },
+  "light-oil-cracking": {
+    "category": "chemistry",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "petroleum-gas",
+        "amount": 20
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "water",
+        "amount": 30
+      },
+      {
+        "resource": "light-oil",
+        "amount": 30
+      }
+    ]
+  },
+  "solid-fuel-from-light-oil": {
+    "category": "chemistry",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "solid-fuel",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "light-oil",
+        "amount": 10
+      }
+    ]
+  },
+  "solid-fuel-from-petroleum-gas": {
+    "category": "chemistry",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "solid-fuel",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "petroleum-gas",
+        "amount": 20
+      }
+    ]
+  },
+  "solid-fuel-from-heavy-oil": {
+    "category": "chemistry",
+    "time": 2,
+    "outputs": [
+      {
+        "resource": "solid-fuel",
+        "amount": 1
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "heavy-oil",
+        "amount": 20
+      }
+    ]
+  },
+  "uranium-processing": {
+    "category": "centrifuging",
+    "time": 12,
+    "outputs": [
+      {
+        "resource": "uranium-235",
+        "amount": 0.007
+      },
+      {
+        "resource": "uranium-238",
+        "amount": 0.993
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "uranium-ore",
+        "amount": 10
+      }
+    ]
+  },
+  "nuclear-fuel-reprocessing": {
+    "category": "centrifuging",
+    "time": 60,
+    "outputs": [
+      {
+        "resource": "uranium-238",
+        "amount": 3
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "used-up-uranium-fuel-cell",
+        "amount": 5
+      }
+    ]
+  },
+  "kovarex-enrichment-process": {
+    "category": "centrifuging",
+    "time": 60,
+    "outputs": [
+      {
+        "resource": "uranium-235",
+        "amount": 41
+      },
+      {
+        "resource": "uranium-238",
+        "amount": 2
+      }
+    ],
+    "inputs": [
+      {
+        "resource": "uranium-235",
+        "amount": 40
+      },
+      {
+        "resource": "uranium-238",
+        "amount": 5
+      }
+    ]
   }
 }

@@ -1,6 +1,5 @@
 .idea
 venv
 *.iml
-
-
 __pycache__/
+output
