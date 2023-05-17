@@ -6,9 +6,10 @@ import graphviz
 
 
 class GenerateTab:
-    def __init__(self, parent, graph):
+    def __init__(self, parent, graph, bus):
         self.curr_gen_num = 0
         self.parent = parent
+        self.bus = bus
         self.graph = graph
         self.master = ttk.Frame(self.parent)
         # Add to parent
@@ -42,9 +43,6 @@ class GenerateTab:
         self.entry_filter_omit_var = tkinter.StringVar(self.frame_filter)
         self.entry_filter_omit = ttk.Entry(self.frame_filter, textvariable=self.entry_filter_omit_var)
         self.entry_filter_omit.grid(row=3, column=1)
-        # TODO: Temporary
-        with open("resources/on_bus.txt", "r") as f:
-            self.entry_filter_omit_var.set(f.read())
 
         self.chck_compress_water_value = tkinter.IntVar()
         self.chck_compress_water = tkinter.Checkbutton(self.master, text="Compress water node",
@@ -67,7 +65,7 @@ class GenerateTab:
             os.mkdir("output")
         try:
             self.curr_gen_num += 1
-            dot.render("output/output{}".format(self.curr_gen_num), view=True, cleanup=True)
+            dot.render("output/output{}".format(self.curr_gen_num), view=True, cleanup=False)
             self.lbl_status_value.set("Generated successfully...")
         except graphviz.backend.CalledProcessError:
             self.lbl_status_value.set("Failed to generate, target file opened.")
@@ -88,6 +86,8 @@ class GenerateTab:
         omit_list = []
         if self.entry_filter_omit.get().strip() != "":
             omit_list = self.entry_filter_omit.get().split(",")
+        omit_list = self.bus.add_all(omit_list)
+
         self.try_to_render_dot(self.graph.get_dot_with_filter(self.cmbx_filter_resource.get(),
                                                               int(self.entry_filter_depth.get()),
                                                               self.cmbx_filter_direction.get(),

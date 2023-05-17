@@ -48,7 +48,7 @@ class Graph:
 
     def get_resource_from_name(self, resource_human_name: str) -> Resource:
         """
-        Returns an instance of Resource object for the speciied human name. If this Resource was not registered yet, it
+        Returns an instance of Resource object for the specified human name. If this Resource was not registered yet, it
         creates a new instance and adds it to the resources list automatically
         :return: Resource object
         """
@@ -142,9 +142,9 @@ class Graph:
                 recipe.add_to_dot(dot, compress_water)
 
                 for o in recipe.get_output_resources():
-                    o.add_to_dot(dot, compress_water)
+                    o.add_to_dot(dot, compress_water, o in omit)
                 for i in recipe.get_input_resources():
-                    i.add_to_dot(dot, compress_water)
+                    i.add_to_dot(dot, compress_water, i in omit)
                     draw_recursive_up(i, curr_depth + 1)
 
         res = self.resources[self.resources_name_map[resource_human]]

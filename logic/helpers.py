@@ -13,7 +13,7 @@ def info(message: str):
     print(message)
 
 def convert_name(name: str) -> str:
-    return name.replace(' ', '_').replace(':', '_').lower()
+    return name.replace(' ', '_').replace(':', '_').lower().strip()
 
 
 def format_number(number):

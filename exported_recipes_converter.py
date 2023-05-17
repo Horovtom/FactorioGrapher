@@ -1,7 +1,7 @@
 import json
 
 recipes: dict
-with open("resources/recipes_export.json", 'r') as recipes_file:
+with open("resources/raw/recipes_base.json", 'r') as recipes_file:
     recipes = json.load(recipes_file)
 
 done = {}

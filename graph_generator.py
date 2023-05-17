@@ -2,10 +2,12 @@
 
 from gui.gui import GUI
 from logic.Graph import Graph
+from logic.bus import Bus
 
-g = Graph(recipes="resources/recipes.json", factories="resources/factories.json")
+g = Graph(recipes="resources/processed/py_recipes.json", factories="resources/factories.json")
+bus = Bus(file="resources/on_bus.txt", graph=g)
 
-a = GUI(g)
+a = GUI(g, bus)
 a.run()
 
 # def run():
