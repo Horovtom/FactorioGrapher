@@ -1,0 +1,192 @@
+{
+    "blueprint": {
+        "icons": [
+            {
+                "signal": {
+                    "type": "item",
+                    "name": "automated-factory-mk01"
+                },
+                "index": 1
+            }
+        ],
+        "entities": [
+            {
+                "entity_number": 1,
+                "name": "automated-factory-mk01",
+                "position": {
+                    "x": -235.5,
+                    "y": -120.5
+                },
+                "recipe": "borax-mine"
+            },
+            {
+                "entity_number": 2,
+                "name": "automated-factory-mk01",
+                "position": {
+                    "x": -225.5,
+                    "y": -120.5
+                },
+                "recipe": "glassworks-mk01"
+            },
+            {
+                "entity_number": 3,
+                "name": "medium-electric-pole",
+                "position": {
+                    "x": -230.5,
+                    "y": -120.5
+                }
+            },
+            {
+                "entity_number": 4,
+                "name": "logistic-chest-requester",
+                "position": {
+                    "x": -230.5,
+                    "y": -119.5
+                },
+                "request_filters": [
+                    {
+                        "index": 1,
+                        "name": "stone-brick",
+                        "count": 900
+                    },
+                    {
+                        "index": 2,
+                        "name": "steam-engine",
+                        "count": 180
+                    },
+                    {
+                        "index": 3,
+                        "name": "electronic-circuit",
+                        "count": 300
+                    },
+                    {
+                        "index": 4,
+                        "name": "small-parts-01",
+                        "count": 900
+                    },
+                    {
+                        "index": 5,
+                        "name": "copper-plate",
+                        "count": 1200
+                    },
+                    {
+                        "index": 6,
+                        "name": "iron-plate",
+                        "count": 1200
+                    }
+                ]
+            },
+            {
+                "entity_number": 5,
+                "name": "logistic-chest-passive-provider",
+                "position": {
+                    "x": -230.5,
+                    "y": -118.5
+                }
+            },
+            {
+                "entity_number": 6,
+                "name": "fast-inserter",
+                "position": {
+                    "x": -231.5,
+                    "y": -118.5
+                },
+                "direction": 6,
+                "control_behavior": {
+                    "logistic_condition": {
+                        "first_signal": {
+                            "type": "item",
+                            "name": "borax-mine"
+                        },
+                        "constant": 20,
+                        "comparator": "<"
+                    },
+                    "connect_to_logistic_network": true
+                }
+            },
+            {
+                "entity_number": 7,
+                "name": "stack-inserter",
+                "position": {
+                    "x": -229.5,
+                    "y": -119.5
+                },
+                "direction": 6
+            },
+            {
+                "entity_number": 8,
+                "name": "fast-inserter",
+                "position": {
+                    "x": -229.5,
+                    "y": -118.5
+                },
+                "direction": 2,
+                "control_behavior": {
+                    "circuit_condition": {
+                        "first_signal": {
+                            "type": "virtual",
+                            "name": "signal-anything"
+                        },
+                        "constant": 0,
+                        "comparator": "<"
+                    },
+                    "logistic_condition": {
+                        "first_signal": {
+                            "type": "item",
+                            "name": "glassworks-mk01"
+                        },
+                        "constant": 20,
+                        "comparator": "<"
+                    },
+                    "connect_to_logistic_network": true
+                }
+            },
+            {
+                "entity_number": 9,
+                "name": "logistic-chest-requester",
+                "position": {
+                    "x": -230.5,
+                    "y": -117.5
+                },
+                "request_filters": [
+                    {
+                        "index": 1,
+                        "name": "transport-belt",
+                        "count": 1200
+                    },
+                    {
+                        "index": 2,
+                        "name": "electric-mining-drill",
+                        "count": 60
+                    },
+                    {
+                        "index": 3,
+                        "name": "soil-extractormk01",
+                        "count": 60
+                    },
+                    {
+                        "index": 4,
+                        "name": "electronic-circuit",
+                        "count": 1200
+                    },
+                    {
+                        "index": 5,
+                        "name": "small-parts-01",
+                        "count": 900
+                    }
+                ]
+            },
+            {
+                "entity_number": 10,
+                "name": "stack-inserter",
+                "position": {
+                    "x": -231.5,
+                    "y": -117.5
+                },
+                "direction": 2
+            }
+        ],
+        "item": "blueprint",
+        "version": 281479276986368
+    }
+}
