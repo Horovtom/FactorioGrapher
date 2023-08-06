@@ -5,7 +5,7 @@ with open("resources/raw/recipes_py.json", "r") as f:
 
 res = {}
 for key in recipes.keys():
-    if "-barrel" in key or "-pyvoid" in key or "blackhole-fuel-" in key:
+    if "-unbarreling" in key or "-barrel" in key or "-pyvoid" in key or "blackhole-fuel-" in key or "-canister" in key:
         continue
 
     res[key] = {

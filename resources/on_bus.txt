@@ -98,6 +98,7 @@ copper-cable
 pcb1
 coke
 waste-water
+empty-fuel-canister
 etching
 ethylene
 ticl4
@@ -136,7 +137,6 @@ aluminium-plate
 salt
 iron-gear-wheel
 kimberlite-rock
-anthraquinone
 flask
 liquid-nitrogen
 nylon
