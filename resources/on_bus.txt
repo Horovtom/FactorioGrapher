@@ -244,8 +244,6 @@ ore-lead
 molten-steel
 ammonia
 methanol
-vanadium-oxide
-vanadates
 hydrogen
 oxygen
 industrial-solvent
